@@ -1,1 +1,0 @@
-# capstone_jam_squad
