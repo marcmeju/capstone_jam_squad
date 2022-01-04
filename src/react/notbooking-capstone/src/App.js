@@ -7,6 +7,7 @@ import NotFound from "./Components/NotFound"
 import { useState, useEffect } from "react"
 import {BrowserRouter as Router, Route,Switch} from "react-router-dom"
 import ViewEvents from "./Components/Events/ViewEvents"
+import AddEvents from "./Components/Events/AddEvents"
 
 
 function App(){
@@ -52,7 +53,7 @@ function App(){
                     </Route>
 
                     <Route path = "/events/add">
-
+                        <AddEvents />
                     </Route>
 
                     <Route>

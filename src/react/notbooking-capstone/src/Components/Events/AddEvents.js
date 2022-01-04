@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
+
 
 const DEFAULT_EVENT = {
     eventType: "",
@@ -19,9 +21,25 @@ function AddEvents(){
     const [locationId,setLocationId] = useState("");
     const [contactId,setContactId] = useState("");
 
-    const handleChange
+    const handleTypeChange = (event) => {setEventType(event.target.value)}
+    const handleNameChange = (event) => {setEventName(event.target.value)}
+    const handleDateChange = (event) => {setEventDate(event.target.value)}
+    const handlePriceChange = (event) => {setEventPrice(event.target.value)}
+    const handleLocationChange = (event) => {setLocationId(event.target.value)}
+    const handleContactChange = (event) => {setContactId(event.target.value)}
 
-    const handleSubmit
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const newEvent = {
+            eventType,
+            eventName,
+            eventDate,
+            eventPrice,
+            locationId,
+            contactId
+        }
+    }
 
     const handleCancel = () =>{
         setEventType ("");
@@ -41,7 +59,8 @@ function AddEvents(){
                 type="text"
                 name="eventType"
                 value={eventType}
-                onChange
+                onChange ={handleTypeChange}
+                placeholder="Event Type"
             />
             </div>
             <div>
@@ -51,7 +70,8 @@ function AddEvents(){
                 type="text"
                 name="eventName"
                 value={eventName}
-                onChange
+                onChange = {handleNameChange}
+                placeholder = "Event Name"
             />
             </div>
             <div>
@@ -61,7 +81,8 @@ function AddEvents(){
                 type="text"
                 name="eventDate"
                 value={eventDate}
-                onChange
+                onChange={handleDateChange}
+                placeholder="Date"
             />
             </div>
             <div>
@@ -71,7 +92,8 @@ function AddEvents(){
                 type="text"
                 name="eventPrice"
                 value={eventPrice}
-                onChange
+                onChange={handlePriceChange}
+                placeholder="Price"
             />
             </div>
             <div>
@@ -81,7 +103,8 @@ function AddEvents(){
                 type="text"
                 name="locationId"
                 value={locationId}
-                onChange
+                onChange = {handleLocationChange}
+                placeholder="Location"
             />
             </div>
             <div>
@@ -91,7 +114,8 @@ function AddEvents(){
                 type="text"
                 name="contactId"
                 value={contactId}
-                onChange
+                onChange = {handleContactChange}
+                placeholder="Contact"
             />
             </div>
             <button className="btn btn-success ml-2" type="submit">
