@@ -1,10 +1,14 @@
 package learn.notbooking.models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Package {
 private int packageId;
 private String packageName;
 private int tierId;
 private int packagePrice;
+private List<Event> events = new ArrayList<>();
 
     public int getPackageId() {
         return packageId;

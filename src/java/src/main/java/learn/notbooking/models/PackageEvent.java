@@ -5,7 +5,26 @@ public class PackageEvent {
     private int eventId;
     private int packageId;
 
+    public Event getEvent() {
+        return event;
+    }
+
+    public void setEvent(Event event) {
+        this.event = event;
+    }
+
     private Event event;
+    private Package pack;
+
+    public Tier getTier() {
+        return tier;
+    }
+
+    public void setTier(Tier tier) {
+        this.tier = tier;
+    }
+
+    private Tier tier;
 
     public int getPackageEventId() {
         return packageEventId;

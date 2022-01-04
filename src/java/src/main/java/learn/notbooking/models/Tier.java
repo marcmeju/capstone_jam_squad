@@ -5,7 +5,15 @@ public class Tier {
     private String tierName;
     private String tierDescription;
 
+    public Package getPack() {
+        return pack;
+    }
 
+    public void setPack(Package pack) {
+        this.pack = pack;
+    }
+
+    private Package pack;
 
     public int getTierId() {
         return tierId;

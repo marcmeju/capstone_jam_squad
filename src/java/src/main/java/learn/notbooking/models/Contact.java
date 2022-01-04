@@ -2,7 +2,7 @@ package learn.notbooking.models;
 
 public class Contact {
     private int contactId;
-    private int phone;
+    private String phone;
     private String email;
     private String contactType;
 
@@ -15,11 +15,11 @@ public class Contact {
         this.contactId = contactId;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
