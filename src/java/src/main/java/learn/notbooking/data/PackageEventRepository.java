@@ -7,5 +7,5 @@ public interface PackageEventRepository {
 
     boolean update(PackageEvent packageEvent);
 
-    boolean deleteByKey(int packageId, int eventId);
+    boolean deleteByKey(int packageEventId);
 }
