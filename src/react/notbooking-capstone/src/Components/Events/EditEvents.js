@@ -10,8 +10,8 @@ function EditEvents(){
     const [eventName,setEventName] = useState("");
     const [eventDate,setEventDate] = useState("");
     const [eventPrice,setEventPrice] = useState("");
-    const [locationId,setLocationId] = useState("");
-    const [contactId,setContactId] = useState("");
+    const [locationId,setLocationId] = useState(0);
+    const [contactId,setContactId] = useState(0);
 
     const handleTypeChange = (event) => {setEventType(event.target.value)}
     const handleNameChange = (event) => {setEventName(event.target.value)}
@@ -37,8 +37,8 @@ function EditEvents(){
         setEventName ("");
         setEventDate ("");
         setEventPrice ("");
-        setLocationId ("");
-        setContactId ("");
+        setLocationId (0);
+        setContactId (0);
     }
 
 return(

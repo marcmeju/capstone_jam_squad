@@ -7,8 +7,8 @@ const DEFAULT_EVENT = {
     eventName: "",
     eventDate: "",
     eventPrice: "",
-    locationId: "",
-    contactId: ""
+    locationId: 0,
+    contactId: 0
 }
 
 function AddEvents(){
