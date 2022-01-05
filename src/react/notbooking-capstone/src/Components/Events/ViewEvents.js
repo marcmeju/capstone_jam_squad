@@ -40,9 +40,9 @@ function ViewEvents(){
                         <th id="eventType">Event Type: </th>
                         <th id="eventName">Event Name:</th>
                         <th id="eventDate">Event Date:</th>
-                        <th id="eventPrice">Event Price</th>
-                        <th id="locationId">Location</th>
-                        <th id="contactId">Contact Id</th>
+                        <th id="eventPrice">Event Price:</th>
+                        <th id="locationId">Location:</th>
+                        <th id="contactId">Contact:</th>
                         <th></th>
                         <th></th>
                     </tr>

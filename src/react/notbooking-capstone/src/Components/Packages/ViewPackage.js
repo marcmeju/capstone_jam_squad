@@ -29,7 +29,7 @@ function ViewPackage(){
                             <th id="tierId">Tier ID:</th>
                             <th id="Events">Event Name:</th>
                             <th id="locationofEvents">Location:</th>
-                            <th id="contact">Contact Info</th>
+                            <th id="contact">Contact Info:</th>
                             <th id="date">Date of Event:</th>
                         </tr>
                     </thead>
