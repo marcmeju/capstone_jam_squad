@@ -1,3 +1,4 @@
+
 -- -----------------------------------------------------
 -- Schema not_booking
 -- -----------------------------------------------------
@@ -20,8 +21,7 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`Location` (
   `location_state` VARCHAR(45) NULL,
   `location_address` VARCHAR(45) NULL,
   `location_zipcode` INT NULL,
-  PRIMARY KEY (`location_id`),
-  UNIQUE INDEX `location_name_UNIQUE` (`location_city` ASC) VISIBLE)
+  PRIMARY KEY (`location_id`))
 ;
 
 
@@ -59,24 +59,44 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`Package` (
 
 
 -- -----------------------------------------------------
+-- Table `not_booking`.`Contact`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `not_booking`.`Contact` ;
+
+CREATE TABLE IF NOT EXISTS `not_booking`.`Contact` (
+  `contact_id` INT NOT NULL AUTO_INCREMENT,
+  `phone` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `contact_type` VARCHAR(45) NULL,
+  PRIMARY KEY (`contact_id`),
+  UNIQUE INDEX `contact_id_UNIQUE` (`contact_id` ASC) VISIBLE)
+;
+
+
+-- -----------------------------------------------------
 -- Table `not_booking`.`Event`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `not_booking`.`Event` ;
 
 CREATE TABLE IF NOT EXISTS `not_booking`.`Event` (
-  `event_id` INT NOT NULL,
+  `event_id` INT NOT NULL AUTO_INCREMENT,
   `event_type` VARCHAR(45) NOT NULL,
   `event_name` VARCHAR(45) NOT NULL,
   `event_date` DATETIME NOT NULL,
   `event_price` INT NULL,
   `location_id` INT NULL,
+  `contact_id` INT NOT NULL,
   PRIMARY KEY (`event_id`),
-  UNIQUE INDEX `event_type_UNIQUE` (`event_type` ASC) VISIBLE,
-  UNIQUE INDEX `event_name_UNIQUE` (`event_name` ASC) VISIBLE,
   INDEX `location_id_idx` (`location_id` ASC) VISIBLE,
+  INDEX `fk_Event_Contact1_idx` (`contact_id` ASC) VISIBLE,
   CONSTRAINT `location_id`
     FOREIGN KEY (`location_id`)
     REFERENCES `not_booking`.`Location` (`location_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Event_Contact1`
+    FOREIGN KEY (`contact_id`)
+    REFERENCES `not_booking`.`Contact` (`contact_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ;
@@ -124,12 +144,19 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`Customer` (
   `customer_first_name` VARCHAR(45) NULL,
   `customer_last_name` VARCHAR(45) NULL,
   `user_id` INT NOT NULL,
+  `contact_id` INT NOT NULL,
   PRIMARY KEY (`customer_id`),
   UNIQUE INDEX `customer_id_UNIQUE` (`customer_id` ASC) VISIBLE,
   INDEX `fk_Customer_user1_idx` (`user_id` ASC) VISIBLE,
+  INDEX `fk_Customer_Contact1_idx` (`contact_id` ASC) VISIBLE,
   CONSTRAINT `fk_Customer_user1`
     FOREIGN KEY (`user_id`)
     REFERENCES `not_booking`.`user` (`user_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Customer_Contact1`
+    FOREIGN KEY (`contact_id`)
+    REFERENCES `not_booking`.`Contact` (`contact_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ;
@@ -186,31 +213,3 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`Package_event` (
     ON UPDATE NO ACTION)
 ;
 
-
--- -----------------------------------------------------
--- Table `not_booking`.`Contact`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `not_booking`.`Contact` ;
-
-CREATE TABLE IF NOT EXISTS `not_booking`.`Contact` (
-  `contact_id` INT NOT NULL AUTO_INCREMENT,
-  `customer_id` INT NULL,
-  `event_id` INT NULL,
-  `phone` VARCHAR(45) NULL,
-  `email` VARCHAR(45) NULL,
-  `contact_type` VARCHAR(45) NULL,
-  PRIMARY KEY (`contact_id`),
-  UNIQUE INDEX `contact_id_UNIQUE` (`contact_id` ASC) VISIBLE,
-  INDEX `event_id_idx` (`event_id` ASC) VISIBLE,
-  INDEX `customer_id_idx` (`customer_id` ASC) VISIBLE,
-  CONSTRAINT `event_id`
-    FOREIGN KEY (`event_id`)
-    REFERENCES `not_booking`.`Event` (`event_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `customer_id`
-    FOREIGN KEY (`customer_id`)
-    REFERENCES `not_booking`.`Customer` (`customer_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-;

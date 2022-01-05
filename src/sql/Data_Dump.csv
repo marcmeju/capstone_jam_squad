@@ -1,0 +1,257 @@
+S_No,City,State,Event_Type,Event_Name,Address,Zipcode,phone,Event,Event_Date,Event_Price,Event_Email
+1,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/12/22,15,lmitchinsonu@de.vu
+2,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/13/22,15,lmitchinsonu@de.vu
+3,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/14/22,15,lmitchinsonu@de.vu
+4,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/15/22,15,lmitchinsonu@de.vu
+5,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/16/22,15,lmitchinsonu@de.vu
+6,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/12/22,25,yruttv@state.tx.us
+7,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/13/22,25,yruttv@state.tx.us
+8,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/14/22,25,yruttv@state.tx.us
+9,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/15/22,25,yruttv@state.tx.us
+10,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/16/22,25,yruttv@state.tx.us
+11,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/12/22,15,burridgew@domainmarket.com
+12,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/13/22,15,burridgew@domainmarket.com
+13,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/14/22,15,burridgew@domainmarket.com
+14,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/15/22,15,burridgew@domainmarket.com
+15,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/16/22,15,burridgew@domainmarket.com
+16,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/17/22,15,burridgew@domainmarket.com
+17,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/12/22,134,wnorthidgex@theatlantic.com
+18,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/13/22,134,wnorthidgex@theatlantic.com
+19,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/14/22,134,wnorthidgex@theatlantic.com
+20,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/15/22,134,wnorthidgex@theatlantic.com
+21,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/16/22,134,wnorthidgex@theatlantic.com
+22,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/17/22,134,wnorthidgex@theatlantic.com
+23,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/12/22,69,pbrownselly@desdev.cn
+24,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/13/22,69,pbrownselly@desdev.cn
+25,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/14/22,69,pbrownselly@desdev.cn
+26,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/15/22,69,pbrownselly@desdev.cn
+27,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/16/22,69,pbrownselly@desdev.cn
+28,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/12/22,30,jaberchirderz@cdbaby.com
+29,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/13/22,30,jaberchirderz@cdbaby.com
+30,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/14/22,30,jaberchirderz@cdbaby.com
+31,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/15/22,30,jaberchirderz@cdbaby.com
+32,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/16/22,30,jaberchirderz@cdbaby.com
+33,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/17/22,30,jaberchirderz@cdbaby.com
+34,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/12/22,37,legdal10@state.tx.us
+35,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/13/22,37,legdal10@state.tx.us
+36,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/14/22,37,legdal10@state.tx.us
+37,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/15/22,37,legdal10@state.tx.us
+38,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/16/22,37,legdal10@state.tx.us
+39,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/17/22,37,legdal10@state.tx.us
+40,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/12/22,30,sumfrey11@dyndns.org
+41,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/13/22,30,sumfrey11@dyndns.org
+42,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/14/22,30,sumfrey11@dyndns.org
+43,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/15/22,30,sumfrey11@dyndns.org
+44,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/16/22,30,sumfrey11@dyndns.org
+45,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/17/22,30,sumfrey11@dyndns.org
+46,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/12/22,125,vwherrett12@sfgate.com
+47,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/13/22,125,vwherrett12@sfgate.com
+48,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/14/22,125,vwherrett12@sfgate.com
+49,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/15/22,125,vwherrett12@sfgate.com
+50,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/16/22,125,vwherrett12@sfgate.com
+51,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/17/22,125,vwherrett12@sfgate.com
+52,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/18/22,125,vwherrett12@sfgate.com
+53,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/12/22,125,gbradwell13@sciencedirect.com
+54,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/13/22,125,gbradwell13@sciencedirect.com
+55,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/14/22,125,gbradwell13@sciencedirect.com
+56,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/15/22,125,gbradwell13@sciencedirect.com
+57,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/16/22,125,gbradwell13@sciencedirect.com
+58,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/17/22,125,gbradwell13@sciencedirect.com
+59,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/18/22,125,gbradwell13@sciencedirect.com
+60,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/12/22,45,alydon14@tinypic.com
+61,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/13/22,45,alydon14@tinypic.com
+62,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/14/22,45,alydon14@tinypic.com
+63,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/15/22,45,alydon14@tinypic.com
+64,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/16/22,45,alydon14@tinypic.com
+65,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/17/22,45,alydon14@tinypic.com
+66,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/18/22,45,alydon14@tinypic.com
+67,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/19/22,45,alydon14@tinypic.com
+68,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/12/22,30,kpalser16@sina.com.cn
+69,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/13/22,30,kpalser16@sina.com.cn
+70,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/14/22,30,kpalser16@sina.com.cn
+71,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/15/22,30,kpalser16@sina.com.cn
+72,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/16/22,30,kpalser16@sina.com.cn
+73,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/17/22,30,kpalser16@sina.com.cn
+74,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/18/22,30,kpalser16@sina.com.cn
+75,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/19/22,30,kpalser16@sina.com.cn
+76,Chicago,IL, Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/12/22,40,dspellessyj@weibo.com
+77,Chicago,IL, Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/13/22,40,dspellessyj@weibo.com
+78,Chicago,IL, Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/14/22,40,dspellessyj@weibo.com
+79,Chicago,IL, Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/15/22,40,dspellessyj@weibo.com
+80,Chicago,IL, Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/16/22,40,dspellessyj@weibo.com
+81,Chicago,IL, Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/17/22,40,dspellessyj@weibo.com
+82,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/12/22,22,jspollenk@house.gov
+83,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/13/22,22,jspollenk@house.gov
+84,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/14/22,22,jspollenk@house.gov
+85,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/15/22,22,jspollenk@house.gov
+86,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/16/22,22,jspollenk@house.gov
+87,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/12/22,6,mmcdouall@amazon.co.jp
+88,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/13/22,6,mmcdouall@amazon.co.jp
+89,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/14/22,6,mmcdouall@amazon.co.jp
+90,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/15/22,6,mmcdouall@amazon.co.jp
+91,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/16/22,6,mmcdouall@amazon.co.jp
+92,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/12/22,30,tderlm@blogtalkradio.com
+93,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/13/22,30,tderlm@blogtalkradio.com
+94,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/14/22,30,tderlm@blogtalkradio.com
+95,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/15/22,30,tderlm@blogtalkradio.com
+96,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/16/22,30,tderlm@blogtalkradio.com
+97,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/17/22,30,tderlm@blogtalkradio.com
+98,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/12/22,10,gabethelln@nydailynews.com
+99,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/13/22,10,gabethelln@nydailynews.com
+100,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/14/22,10,gabethelln@nydailynews.com
+101,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/15/22,10,gabethelln@nydailynews.com
+102,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/16/22,10,gabethelln@nydailynews.com
+103,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/12/22,40,dcrimino@webnode.com
+104,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/13/22,40,dcrimino@webnode.com
+105,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/14/22,40,dcrimino@webnode.com
+106,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/15/22,40,dcrimino@webnode.com
+107,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/16/22,40,dcrimino@webnode.com
+108,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/12/22,37,fgaymerp@flickr.com
+109,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/13/22,37,fgaymerp@flickr.com
+110,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/14/22,37,fgaymerp@flickr.com
+111,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/15/22,37,fgaymerp@flickr.com
+112,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/16/22,37,fgaymerp@flickr.com
+113,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/12/22,30,npicknettq@meetup.com
+114,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/13/22,30,npicknettq@meetup.com
+115,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/14/22,30,npicknettq@meetup.com
+116,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/15/22,30,npicknettq@meetup.com
+117,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/16/22,30,npicknettq@meetup.com
+118,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/12/22,125,ltooheyr@hao123.com
+119,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/13/22,125,ltooheyr@hao123.com
+120,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/14/22,125,ltooheyr@hao123.com
+121,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/15/22,125,ltooheyr@hao123.com
+122,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/16/22,125,ltooheyr@hao123.com
+123,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/12/22,125,kpigdons@mapy.cz
+124,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/13/22,125,kpigdons@mapy.cz
+125,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/14/22,125,kpigdons@mapy.cz
+126,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/15/22,125,kpigdons@mapy.cz
+127,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/12/22,125,wplumert@gizmodo.com
+128,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/13/22,125,wplumert@gizmodo.com
+129,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/14/22,125,wplumert@gizmodo.com
+130,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/15/22,125,wplumert@gizmodo.com
+131,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/16/22,125,wplumert@gizmodo.com
+132,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/17/22,125,wplumert@gizmodo.com
+133,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/12/22,23,dsterman0@ed.gov
+134,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/13/22,23,dsterman0@ed.gov
+135,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/14/22,23,dsterman0@ed.gov
+136,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/15/22,23,dsterman0@ed.gov
+137,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/16/22,23,dsterman0@ed.gov
+138,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Virtual Teacher Workshop: MLK Day of Action,1/12/22,28,foneil1@alibaba.com
+139,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Art History Happy Hour: Modern Gothic,1/13/22,28,foneil1@alibaba.com
+140,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Art History Happy Hour: Modern Gothic,1/14/22,28,foneil1@alibaba.com
+141,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Art History Happy Hour: Modern Gothic,1/15/22,28,foneil1@alibaba.com
+142,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Virtual Open House: Adult Literacy at the Brooklyn Museum,1/16/22,28,foneil1@alibaba.com
+143,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Studio Art: Printmaking Inspired by Andy Warhol,1/17/22,28,foneil1@alibaba.com
+144,New York,NY,Museum,Whitney Museum of American Art,99 Gansevoort St.,10014,(212) 570-3600,Virtual Tour: Jennifer Packer,1/12/22,20,ckelf2@google.com.br
+145,New York,NY,Museum,Whitney Museum of American Art,99 Gansevoort St.,10014,(212) 570-3600,Open Studio From Home: Jasper Johns PMA X Whitney,1/13/22,20,ckelf2@google.com.br
+146,New York,NY,Museum,Whitney Museum of American Art,99 Gansevoort St.,10014,(212) 570-3600,Open Studio From Home: Jasper Johns PMA X Whitney,1/14/22,20,ckelf2@google.com.br
+147,New York,NY,Museum,Whitney Museum of American Art,99 Gansevoort St.,10014,(212) 570-3600,Open Studio From Home: Jasper Johns PMA X Whitney,1/15/22,20,ckelf2@google.com.br
+148,New York,NY,Museum,Whitney Museum of American Art,99 Gansevoort St.,10014,(212) 570-3600,"Absence that Fills the World: The Figure in the Work of Jennifer Packer, Jasper Johns, and More",1/16/22,20,ckelf2@google.com.br
+149,New York,NY,Museum,9/11 Memorial and Museum,180 Greenwich St,10007,(212) 312-8800,Bagpipe Tribute,1/12/22,30,bforrestor3@wunderground.com
+150,New York,NY,Museum,9/11 Memorial and Museum,180 Greenwich St,10007,(212) 312-8800,Bagpipe Tribute,1/13/22,30,bforrestor3@wunderground.com
+151,New York,NY,Museum,9/11 Memorial and Museum,180 Greenwich St,10007,(212) 312-8800,Bagpipe Tribute,1/14/22,30,bforrestor3@wunderground.com
+152,New York,NY,Museum,9/11 Memorial and Museum,180 Greenwich St,10007,(212) 312-8800,Bagpipe Tribute,1/15/22,30,bforrestor3@wunderground.com
+153,New York,NY,Museum,9/11 Memorial and Museum,180 Greenwich St,10007,(212) 312-8800,Bagpipe Tribute,1/16/22,30,bforrestor3@wunderground.com
+154,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/5/22,32,rmcilriach4@phoca.cz
+155,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/6/22,32,rmcilriach4@phoca.cz
+156,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/7/22,32,rmcilriach4@phoca.cz
+157,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/8/22,32,rmcilriach4@phoca.cz
+158,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/9/22,32,rmcilriach4@phoca.cz
+159,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/10/22,32,rmcilriach4@phoca.cz
+160,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/11/22,32,rmcilriach4@phoca.cz
+161,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/12/22,32,rmcilriach4@phoca.cz
+162,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/13/22,32,rmcilriach4@phoca.cz
+163,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/14/22,32,rmcilriach4@phoca.cz
+164,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/15/22,32,rmcilriach4@phoca.cz
+165,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/16/22,32,rmcilriach4@phoca.cz
+166,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/17/22,32,rmcilriach4@phoca.cz
+167,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/18/22,32,rmcilriach4@phoca.cz
+168,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/12/22,19,rmilmith5@google.es
+169,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/13/22,19,rmilmith5@google.es
+170,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/14/22,19,rmilmith5@google.es
+171,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/15/22,19,rmilmith5@google.es
+172,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/16/22,19,rmilmith5@google.es
+173,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/17/22,19,rmilmith5@google.es
+174,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/18/22,19,rmilmith5@google.es
+175,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/19/22,19,rmilmith5@google.es
+176,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/20/22,19,rmilmith5@google.es
+177,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/21/22,19,rmilmith5@google.es
+178,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/22/22,19,rmilmith5@google.es
+179,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/23/22,19,rmilmith5@google.es
+180,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/24/22,19,rmilmith5@google.es
+181,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/25/22,19,rmilmith5@google.es
+182,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/12/22,55,egulliver6@plala.or.jp
+183,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/13/22,55,egulliver6@plala.or.jp
+184,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/14/22,55,egulliver6@plala.or.jp
+185,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/15/22,55,egulliver6@plala.or.jp
+186,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/16/22,55,egulliver6@plala.or.jp
+187,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/17/22,55,egulliver6@plala.or.jp
+188,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/18/22,55,egulliver6@plala.or.jp
+189,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/19/22,55,egulliver6@plala.or.jp
+190,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/20/22,55,egulliver6@plala.or.jp
+191,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/21/22,55,egulliver6@plala.or.jp
+192,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/22/22,55,egulliver6@plala.or.jp
+193,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/23/22,55,egulliver6@plala.or.jp
+194,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/24/22,55,egulliver6@plala.or.jp
+195,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/25/22,55,egulliver6@plala.or.jp
+196,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/12/22,40,cmowsley7@ibm.com
+197,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/13/22,40,cmowsley7@ibm.com
+198,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/14/22,40,cmowsley7@ibm.com
+199,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/15/22,40,cmowsley7@ibm.com
+200,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/16/22,40,cmowsley7@ibm.com
+201,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/17/22,40,cmowsley7@ibm.com
+202,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/18/22,40,cmowsley7@ibm.com
+203,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/19/22,40,cmowsley7@ibm.com
+204,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/20/22,40,cmowsley7@ibm.com
+205,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/21/22,40,cmowsley7@ibm.com
+206,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/22/22,40,cmowsley7@ibm.com
+207,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/23/22,40,cmowsley7@ibm.com
+208,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/24/22,40,cmowsley7@ibm.com
+209,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/25/22,40,cmowsley7@ibm.com
+210,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/12/22,25,umaciaszek8@themeforest.net
+211,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/13/22,25,umaciaszek8@themeforest.net
+212,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/14/22,25,umaciaszek8@themeforest.net
+213,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/15/22,25,umaciaszek8@themeforest.net
+214,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/16/22,25,umaciaszek8@themeforest.net
+215,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/17/22,25,umaciaszek8@themeforest.net
+216,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/12/22,28,btooke9@wikispaces.com
+217,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/13/22,28,btooke9@wikispaces.com
+218,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/14/22,28,btooke9@wikispaces.com
+219,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/15/22,28,btooke9@wikispaces.com
+220,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/16/22,28,btooke9@wikispaces.com
+221,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/17/22,28,btooke9@wikispaces.com
+222,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/18/22,28,btooke9@wikispaces.com
+223,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/19/22,28,btooke9@wikispaces.com
+224,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/12/22,22,tklementa@last.fm
+225,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/13/22,22,tklementa@last.fm
+226,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/14/22,22,tklementa@last.fm
+227,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/15/22,22,tklementa@last.fm
+228,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/16/22,22,tklementa@last.fm
+229,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/17/22,22,tklementa@last.fm
+230,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/12/22,15,atuxellb@vistaprint.com
+231,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/13/22,15,atuxellb@vistaprint.com
+232,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/14/22,15,atuxellb@vistaprint.com
+233,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/15/22,15,atuxellb@vistaprint.com
+234,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/16/22,15,atuxellb@vistaprint.com
+235,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/17/22,15,atuxellb@vistaprint.com
+236,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/12/22,18,gstreetenc@amazonaws.com
+237,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/13/22,18,gstreetenc@amazonaws.com
+238,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/14/22,18,gstreetenc@amazonaws.com
+239,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/15/22,18,gstreetenc@amazonaws.com
+240,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/16/22,18,gstreetenc@amazonaws.com
+241,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/17/22,18,gstreetenc@amazonaws.com
+242,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/12/22,125,scluleyd@usatoday.com
+243,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/13/22,125,scluleyd@usatoday.com
+244,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/14/22,125,scluleyd@usatoday.com
+245,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/15/22,125,scluleyd@usatoday.com
+246,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/16/22,125,scluleyd@usatoday.com
+247,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/17/22,125,scluleyd@usatoday.com
+248,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/12/22,125,gbrandrethf@wix.com
+249,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/13/22,125,gbrandrethf@wix.com
+250,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/14/22,125,gbrandrethf@wix.com
+251,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/15/22,125,gbrandrethf@wix.com
+252,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/16/22,125,ssaggg@merriam-webster.com
+253,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/12/22,125,ssaggg@merriam-webster.com
+254,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/13/22,125,ssaggg@merriam-webster.com
+255,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/14/22,125,ssaggg@merriam-webster.com
+256,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/15/22,125,ssaggg@merriam-webster.com
