@@ -1,0 +1,118 @@
+no,Package_Name,Tier,City,State,Event_Type,Event_Name,Address,Zipcode,phone,Event,Event_Date,Event_Price
+1,NewYork Express 1 - Museum ,Tier 1,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/12/22,23
+2,NewYork Express 1 - Museum ,Tier 1,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/12/22,125
+3,NewYork Express 1 - Museum ,Tier 1,New York,NY,Museum,Whitney Museum of American Art,99 Gansevoort St.,10014,(212) 570-3600,Open Studio From Home: Jasper Johns PMA X Whitney,1/13/22,20
+4,NewYork Express 1 - Museum ,Tier 1,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/13/22,125
+5,NewYork Express 2- Ferry ,Tier 1,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/12/22,15
+6,NewYork Express 2- Ferry ,Tier 1,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/12/22,125
+7,NewYork Express 2- Ferry ,Tier 1,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/13/22,18
+8,NewYork Express 2- Ferry ,Tier 1,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/13/22,125
+9,NewYork Express 3- Attraction ,Tier 1,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/12/22,32
+10,NewYork Express 3- Attraction ,Tier 1,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/12/22,125
+11,NewYork Express 3- Attraction ,Tier 1,New York,NY,Attraction,Central Park Zoo,64th Street & 5th Avenue,10065,(212) 439-6500,Zoo Tour,1/13/22,19
+12,NewYork Express 3- Attraction ,Tier 1,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/13/22,125
+13,NewYork Express 4- Attraction ,Tier 1,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/12/22,55
+14,NewYork Express 4- Attraction ,Tier 1,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/12/22,125
+15,NewYork Express 4- Attraction ,Tier 1,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/13/22,40
+16,NewYork Express 4- Attraction ,Tier 1,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/13/22,125
+17,NewYork Express 5 - Aquarium ,Tier 1,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/12/22,25
+18,NewYork Express 5 - Aquarium ,Tier 1,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/12/22,125
+19,NewYork Express 5 - Aquarium ,Tier 1,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/13/22,28
+20,NewYork Express 5 - Aquarium ,Tier 1,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/13/22,125
+21,NewYork Express 6,Tier 1,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/12/22,23
+22,NewYork Express 6,Tier 1,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/12/22,32
+23,NewYork Express 6,Tier 1,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/13/22,28
+24,NewYork Express 6,Tier 1,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/13/22,15
+25,NewYork Elite - 1,Tier 2,New York,NY,Attraction,Statue Of Liberty,22 Battery Pl,10004,(212) 363-3200,FERRY TOUR,1/12/22,32
+26,NewYork Elite - 1,Tier 2,New York,NY,Restaurant,Frevo,48 W 8th St,10011,646 455 0804,multi-course modern menu,1/12/22,125
+27,NewYork Elite - 1,Tier 2,New York,NY,Aquarium,Aquarius Aquariums,214 Riverside Dr,10025,212 749 4970,Aquarium tour and Seal show,1/13/22,22
+28,NewYork Elite - 1,Tier 2,New York,NY,Museum,9/11 Memorial and Museum,180 Greenwich St,10007,(212) 312-8800,Bagpipe Tribute,1/14/22,30
+29,NewYork Elite - 1,Tier 2,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/14/22,18
+30,NewYork Elite - 2,Tier 2,New York,NY,Museum,American Museum of Natural History,200 Central Park West,10024,(212) 769-5100,SciCafe: AI and the Future of Disease-Risk Prediction,1/12/22,23
+31,NewYork Elite - 2,Tier 2,New York,NY,Restaurant,Le Bernardin,155 W 51st St,10019,212 554 1515,Elite French Restaurant,1/12/22,125
+32,NewYork Elite - 2,Tier 2,New York,NY,Attraction,Empire State Building,20 W 34th St,10001,(212) 736-3100,ALL ACCESS TOUR,1/13/22,55
+33,NewYork Elite - 2,Tier 2,New York,NY,Ferry,East River Ferry,Brooklyn,11206,844 469 3388,City sight seeing,1/13/22,18
+34,NewYork Elite - 2,Tier 2,New York,NY,Aquarium,New York Aquarium,602 Surf Ave ,11224,718 265 3474,Aquarium tour and Penguin show,1/14/22,25
+35,NewYork Elite - 3,Tier 2,New York,NY,Ferry,NYC Ferry operated by Hornblower,South St & Gouverneur Ln,10005,844 469 3377,Architecture Tour,1/12/22,15
+36,NewYork Elite - 3,Tier 2,New York,NY,Restaurant,Dame,87 MacDougal St,10012,929 367 7370,Best Seafood Eatery in town,1/12/22,125
+37,NewYork Elite - 3,Tier 2,New York,NY,Aquarium,Manhattan Aquariums,522 W 37th St,10018,212 594 2272,Aquarium tour and Dolphin show,1/13/22,28
+38,NewYork Elite - 3,Tier 2,New York,NY,Museum,Brooklyn Museum,200 Eastern Pkwy,11238,718-638-5000,Art History Happy Hour: Modern Gothic,1/14/22,28
+39,NewYork Elite - 3,Tier 2,New York,NY,Attraction,Rockefeller Center,30 Rockefeller Plaza,10112,212 698 2000,360-degree views of New York City,1/14/22,40
+40,Chicago Express 1 - Museum,Tier 1 ,Chicago,IL,Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/12/22,40
+41,Chicago Express 1 - Museum,Tier 1 ,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/12/22,125
+42,Chicago Express 1 - Museum,Tier 1 ,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/13/22,22
+43,Chicago Express 1 - Museum,Tier 1 ,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/13/22,125
+44,Chicago Express 2 - Museum,Tier 1 ,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/12/22,6
+45,Chicago Express 2 - Museum,Tier 1 ,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/12/22,125
+46,Chicago Express 2 - Museum,Tier 1 ,Chicago,IL,Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/13/22,40
+47,Chicago Express 2 - Museum,Tier 1 ,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/13/22,125
+48,Chicago Express 3 - Ferry,Tier 1 ,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/12/22,37
+49,Chicago Express 3 - Ferry,Tier 1 ,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/12/22,125
+50,Chicago Express 3 - Ferry,Tier 1 ,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/13/22,30
+51,Chicago Express 3 - Ferry,Tier 1 ,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/13/22,125
+52,Chicago Express 4 ,Tier 1 ,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/12/22,40
+53,Chicago Express 4 ,Tier 1 ,Chicago,IL,Restaurant,Alinea,1723 N Halsted St,60614,312 227 3456,New American tasting menus featuring highly creative plates,1/12/22,125
+54,Chicago Express 4 ,Tier 1 ,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/13/22,10
+55,Chicago Express 4 ,Tier 1 ,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/13/22,125
+56,Chicago Express 5 - Attraction,Tier 1 ,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/12/22,30
+57,Chicago Express 5 - Attraction,Tier 1 ,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/12/22,125
+58,Chicago Express 5 - Attraction,Tier 1 ,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/13/22,10
+59,Chicago Express 5 - Attraction,Tier 1 ,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/13/22,125
+60,Chicago Express 6,Tier 1 ,Chicago,IL,Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/12/22,40
+61,Chicago Express 6,Tier 1 ,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/12/22,30
+62,Chicago Express 6,Tier 1 ,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/13/22,40
+63,Chicago Express 6,Tier 1 ,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/13/22,37
+64,Chicago Elite 1,Tier 2,Chicago,IL,Museum,Museum of Science and Industry,5700 S Lake Shore Dr,60637,773 753 1351,Award Winning Exhinbits at MSI,1/12/22,22
+65,Chicago Elite 1,Tier 2,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/12/22,125
+66,Chicago Elite 1,Tier 2,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/13/22,30
+67,Chicago Elite 1,Tier 2,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/13/22,30
+68,Chicago Elite 1,Tier 2,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/14/22,40
+69,Chicago Elite 2,Tier 2,Chicago,IL,Attraction,Cloud Gate,201 E Randolph St,60602,312 878 7788,Public sculpture at Millennium Park,1/12/22,10
+70,Chicago Elite 2,Tier 2,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/12/22,40
+71,Chicago Elite 2,Tier 2,Chicago,IL,Museum,Field Museum,1400 S Lake Shore Dr,60605,312 922 9410,National History Museum,1/13/22,40
+72,Chicago Elite 2,Tier 2,Chicago,IL,Restaurant,Monteverde Restaurant & Pastificio,1020 W Madison St,60607,312 888 3041,"Stylish spot serving refined, contemporary Italian menu",1/13/22,125
+73,Chicago Elite 2,Tier 2,Chicago,IL,Ferry,Shoreline Sightseeing,401 N Michigan Ave,60611,312 222 9328,Chicago Architecture Tour,1/14/22,37
+74,Chicago Elite 3,Tier 2,Chicago,IL,Aquarium,Shedd Aquarium,1200 S Lake Shore Dr,60605,312 939 2438,Aquarium tour and Dolphin show,1/12/22,40
+75,Chicago Elite 3,Tier 2,Chicago,IL,Ferry,Chicago Fireboat Tours,111 N Lake Shore Dr,60601,312 919 3367,Skyline Lake Tour 40-Minute,1/13/22,30
+76,Chicago Elite 3,Tier 2,Chicago,IL,Museum,McCormick Bridgehouse & Chicago River Museum,99 Chicago Riverwalk,60601,312 977 0227,Exhibits on the city's river & movable bridges,1/13/22,6
+77,Chicago Elite 3,Tier 2,Chicago,IL,Attraction,Willis Tower,233 S Wacker Dr,60606,312 875 0066,"1,450-foot skyscraper in Chicago",1/14/22,30
+78,Chicago Elite 3,Tier 2,Chicago,IL,Restaurant,The Publican,837 W Fulton Market,60607,312 733 9555,A creative seafood & pork-focused menu plus global brews in a hip setting with communal tables,1/14/22,125
+79,Los Angeles Express 1 - Museum,Tier 1,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/12/22,15
+80,Los Angeles Express 1 - Museum,Tier 1,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/12/22,125
+81,Los Angeles Express 1 - Museum,Tier 1,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/13/22,25
+82,Los Angeles Express 1 - Museum,Tier 1,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/13/22,125
+83,Los Angeles Express 2 - Museum,Tier 1,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/12/22,25
+84,Los Angeles Express 2 - Museum,Tier 1,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/12/22,125
+85,Los Angeles Express 2 - Museum,Tier 1,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/13/22,15
+86,Los Angeles Express 2 - Museum,Tier 1,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/13/22,125
+87,Los Angeles Express 3 - Ferry,Tier 1,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/12/22,45
+88,Los Angeles Express 3 - Ferry,Tier 1,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/12/22,125
+89,Los Angeles Express 3 - Ferry,Tier 1,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/13/22,30
+90,Los Angeles Express 3 - Ferry,Tier 1,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/13/22,125
+91,Los Angeles Express 4 - Aquarium,Tier 1,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/13/22,30
+92,Los Angeles Express 4 - Aquarium,Tier 1,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/12/22,125
+93,Los Angeles Express 4 - Aquarium,Tier 1,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/13/22,30
+94,Los Angeles Express 4 - Aquarium,Tier 1,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/13/22,125
+95,Los Angeles Express 5 - Attraction,Tier 1,Los Angeles,CA,Attraction,Universal Studios Hollywood,100 Universal City Plaza,91608,800 864 8377,Universal Studio Tour ,1/12/22,134
+96,Los Angeles Express 5 - Attraction,Tier 1,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/12/22,125
+97,Los Angeles Express 5 - Attraction,Tier 1,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/13/22,69
+98,Los Angeles Express 5 - Attraction,Tier 1,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/13/22,125
+99,Los Angeles Express 6,Tier 1,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/12/22,15
+100,Los Angeles Express 6,Tier 1,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/12/22,30
+101,Los Angeles Express 6,Tier 1,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/13/22,30
+102,Los Angeles Express 6,Tier 1,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/13/22,30
+103,Los Angeles Elite 1,Tier 2,Los Angeles,CA,Museum,Natural History Museum of Los Angeles County,900 W Exposition Blvd,90007,213 763 3466,Natural History Research Library,1/12/22,15
+104,Los Angeles Elite 1,Tier 2,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/12/22,30
+105,Los Angeles Elite 1,Tier 2,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/13/22,37
+106,Los Angeles Elite 1,Tier 2,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/13/22,125
+107,Los Angeles Elite 1,Tier 2,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/14/22,45
+108,Los Angeles Elite 2,Tier 2,Los Angeles,CA,Aquarium,"Living Art Aquatic Design, Inc.",2301 S Sepulveda Blvd,90064,310 822 7484,Aquarium tour and Dolphin show,1/12/22,30
+109,Los Angeles Elite 2,Tier 2,Los Angeles,CA,Museum,La Brea Tar Pits and Museum,5801 Wilshire Blvd,90036,213 763 3499,A gateway back to the Ice Age,1/13/22,15
+110,Los Angeles Elite 2,Tier 2,Los Angeles,CA,Restaurant,Bestia,2121 E 7th Pl,90021,213 514 5724,Trendy Italian restaurant from an acclaimed husband-&-wife team highlights creative seasonal fare,1/13/22,125
+111,Los Angeles Elite 2,Tier 2,Los Angeles,CA,Attraction,Warner Bros. Studio Tour Hollywood,3400 Warner Blvd,91505,818 977 8687,Film and television studio,1/14/22,69
+112,Los Angeles Elite 2,Tier 2,Los Angeles,CA,Ferry,Spirit Cruises,429 Shoreline Village Drive,90802,310 548 8080,The Only 1-Hour Harbor Cruise in Shoreline Village,1/14/22,30
+113,Los Angeles Elite 3,Tier 2,Los Angeles,CA,Attraction,Madame Tussauds Hollywood,6933 Hollywood Blvd,90028,323 798 1670,Wax museum tour`,1/12/22,30
+114,Los Angeles Elite 3,Tier 2,Los Angeles,CA,Museum,Los Angeles County Museum of Art,5905 Wilshire Blvd,90036,323 857 6000,"Modern architecture, Streamline Moderne",1/12/22,25
+115,Los Angeles Elite 3,Tier 2,Los Angeles,CA,Ferry,Catalina Express,95 Berth,90731,310 519 1212,Discover paradise on Catalina Island with dailyferry tripsto and from the island,1/13/22,45
+116,Los Angeles Elite 3,Tier 2,Los Angeles,CA,Restaurant,PHENAKITE RESTAURANT,1370 N St Andrews Pl,90028,323 380 8573,Modern angeleno restaurant,1/13/22,125
+117,Los Angeles Elite 3,Tier 2,Los Angeles,CA,Aquarium,Aquarium of the Pacific,100 Aquarium Way,90802,562 590 3100,Aquarium tour and Seal show,1/14/22,37

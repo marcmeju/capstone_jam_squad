@@ -49,6 +49,7 @@ insert into not_booking.user_role
 (role_name)
 select distinct user_role from not_booking.USER_DATA_DUMP;
 
+select * from not_booking.user_role;
 -- -----------------------------------------------------
 -- Inserting into "admin" value in  user_role table
 -- -----------------------------------------------------
@@ -111,5 +112,49 @@ values
 
 SELECT * from not_booking.Tier;
 
+SELECT * from not_booking.PACKAGE_DATA_DUMP;
+
+-- -----------------------------------------------------
+-- Inserting into Package table
+-- -----------------------------------------------------
+insert into not_booking.Package
+(package_name,tier_id,package_price)
+select pdd.Package_Name, tr.tier_id, sum(pdd.Event_Price)
+ from not_booking.PACKAGE_DATA_DUMP pdd
+inner join not_booking.Tier tr
+on tr.tier_name = pdd.Tier
+group by pdd.Package_Name, tr.tier_id;
+
+SELECT * FROM not_booking.Package;
+
+-- -----------------------------------------------------
+-- Fixing the space issue in the Evenr_type column`
+-- -----------------------------------------------------
+UPDATE not_booking.Event  set event_type = TRIM(event_type) where event_id<>-1;
+
+-- -----------------------------------------------------
+-- Inserting into Package_event table
+-- -----------------------------------------------------
+insert into not_booking.Package_event
+(event_id, package_id)
+select eve.event_id, pckg.package_id from not_booking.PACKAGE_DATA_DUMP pdd
+inner join not_booking.Package pckg
+on pckg.package_name = pdd.Package_Name
+inner join not_booking.Event eve
+on eve.event_name = pdd.Event_Name
+and eve.event_type = pdd.Event_Type
+and eve.event_price = pdd.Event_Price
+and eve.event_date = STR_TO_DATE(pdd.Event_Date, '%m/%d/%Y');
 
 
+SELECT * FROM not_booking.Package_event;
+
+-- -----------------------------------------------------
+-- Changing the months of the event date
+-- -----------------------------------------------------
+
+select event_date, DATE_ADD(event_date, INTERVAL 3 MONTH) from not_booking.Event;
+
+UPDATE not_booking.Event  set event_date = DATE_ADD(event_date, INTERVAL 6 MONTH) where event_id<>-1;
+
+select * from not_booking.Event;

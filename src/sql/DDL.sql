@@ -171,6 +171,7 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`Booking` (
   `booking_id` INT NOT NULL AUTO_INCREMENT,
   `package_id` INT NULL,
   `customer_id` INT NULL,
+  `num_of_guest` INT NOT NULL,
   PRIMARY KEY (`booking_id`),
   UNIQUE INDEX `booking_id_UNIQUE` (`booking_id` ASC) VISIBLE,
   INDEX `package_id_idx` (`package_id` ASC) VISIBLE,
@@ -194,7 +195,7 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`Booking` (
 DROP TABLE IF EXISTS `not_booking`.`Package_event` ;
 
 CREATE TABLE IF NOT EXISTS `not_booking`.`Package_event` (
-  `package_event_id` INT NOT NULL,
+  `package_event_id` INT NOT NULL AUTO_INCREMENT,
   `event_id` INT NULL,
   `package_id` INT NOT NULL,
   PRIMARY KEY (`package_event_id`),
