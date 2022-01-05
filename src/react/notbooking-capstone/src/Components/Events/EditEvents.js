@@ -20,6 +20,11 @@ function EditEvents(){
     const handleLocationChange = (event) => {setLocationId(event.target.value)}
     const handleContactChange = (event) => {setContactId(event.target.value)}
 
+    const handleUpdate= (event) => {
+        event.preventDefault();
+        handleUpdateSubmit
+    }
+
     const handleUpdateSubmit = () =>{
         const updatedEvent = {
             id: eventId,
@@ -44,7 +49,7 @@ function EditEvents(){
 return(
     <>
         <Errors errors={errors}/>
-        <form onSubmit={handleUpdateSubmit} className="form-inline mx-2 my-4">
+        <form onSubmit={handleUpdate} className="form-inline mx-2 my-4">
             <div>
              <input 
                 className = "form-control col-10"

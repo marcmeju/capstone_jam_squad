@@ -16,6 +16,11 @@ function EditPackage(){
     const handleTierNameChange = (event) => {setTierName(event.target.value)}
     const handleTierDescChange = (event) => {setTierDesc(event.target.value)}
 
+    const handleUpdate = (event) =>{
+        event.preventDefault();
+        handleUpdateSubmit
+    }
+
     const handleUpdateSubmit = () => {
         const updatePackage = {
             id: packageId,
@@ -38,7 +43,7 @@ function EditPackage(){
         <>
         <Errors errors={errors}/>
 
-        <form onSubmit={handleUpdateSubmit} className="form-inline mx-2 my-4">
+        <form onSubmit={handleUpdate} className="form-inline mx-2 my-4">
             <div>
                 <input
                     className="form-control col-10"
