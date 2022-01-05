@@ -1,10 +1,9 @@
 package learn.notbooking.controllers;
 
-
 import learn.notbooking.domain.Result;
 import learn.notbooking.domain.ResultType;
-import learn.notbooking.domain.TierService;
-import learn.notbooking.models.Tier;
+import learn.notbooking.domain.PackageService;
+import learn.notbooking.models.Package;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,55 +13,55 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:3000"})
-@RequestMapping("/tier")
-public class TierController {
+@RequestMapping("/package")
+public class PackageController {
 
-    private final TierService service;
+    private final PackageService service;
 
-    public TierController(TierService service) {
+    public PackageController(PackageService service) {
         this.service = service;
     }
 
     @GetMapping
-    public List<Tier> findAll() {
+    public List<Package> findAll() {
 
         return service.findAll();
 
     }
 
-    @GetMapping("/{tierId}")
-    public ResponseEntity<Tier> findById(@PathVariable int tierId) {
-        Tier tier = service.findById(tierId);
+    @GetMapping("/{packId}")
+    public ResponseEntity<Package> findById(@PathVariable int packId) {
+        Package pack = service.findById(packId);
         try{
-            if (tier == null) {
+            if (pack == null) {
                 return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
             }
-            return new ResponseEntity<>(tier, HttpStatus.OK);
+            return new ResponseEntity<>(pack, HttpStatus.OK);
         }catch (Exception ex){
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @PostMapping
-    public ResponseEntity<Tier> add(@RequestBody Tier tier) {
-        Result<Tier> result = service.add(tier);
+    public ResponseEntity<Package> add(@RequestBody Package pack) {
+        Result<Package> result = service.add(pack);
         if (result.getType() == ResultType.INVALID) {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(result.getPayload(), HttpStatus.CREATED);
     }
 
-    @PutMapping("/{tierId}")
-    public ResponseEntity<Void> update(@PathVariable int tierId, @RequestBody Tier tier) {
+    @PutMapping("/{packId}")
+    public ResponseEntity<Void> update(@PathVariable int packId, @RequestBody Package pack) {
 
         // id conflict. stop immediately.
-        if (tierId != tier.getTierId()) {
+        if (packId != pack.getPackageId()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
         // 4. ResultType -> HttpStatus
         try {
-            Result<Tier> result = service.update(tier);
+            Result<Package> result = service.update(pack);
             if (result.getType() == ResultType.INVALID) {
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             } else if (result.getType() == ResultType.NOT_FOUND) {
@@ -74,10 +73,10 @@ public class TierController {
         }
     }
 
-    @DeleteMapping("/{tierId}")
-    public ResponseEntity<Void> delete(@PathVariable int tierId) {
+    @DeleteMapping("/{packId}")
+    public ResponseEntity<Void> delete(@PathVariable int packId) {
         try{
-            if (service.deleteById(tierId)) {
+            if (service.deleteById(packId)) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
