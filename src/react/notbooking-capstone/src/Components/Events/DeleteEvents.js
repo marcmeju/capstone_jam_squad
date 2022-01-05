@@ -26,7 +26,7 @@ function DeleteEvents(){
     return(
         <form onSubmit={handleDelete} className="form-inline mx-2 my-4">
             <p>Are you sure you want to delete this event?</p>
-            {/* <p>Event Name:  </p> */}
+            <p>Event Type: {eventType} | Event Name: {eventName} | Event Date: {eventDate}</p>
             <Link to="/events/view" className="btn btn-success ml-2" type="submit">Delete</Link>
             <Link to="/events/view" onClick={handleCancel}>Cancel</Link>
         </form>
