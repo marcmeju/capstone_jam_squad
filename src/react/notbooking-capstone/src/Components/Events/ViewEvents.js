@@ -12,6 +12,10 @@ function ViewEvents(){
     // const [contactId,setContactId] = useState("");
 
     const [events,setEvents] = useState([])
+    const [evnt,setEvent] = useState({})
+
+    //setEvent(events.filter.eventId)
+
 
     useEffect(() =>{
         const getData = async () => {
@@ -28,10 +32,11 @@ function ViewEvents(){
 
     return(
         <div>
-            <Link to="/events/add">Add Events</Link>
+            <Link to="/events/add" className="btn btn-primary btn-sm">Add Events</Link>
             <table className="table table-striped table-dark table-hover">
                 <thead>
                     <tr>
+                        <th id="eventId">Event Id:</th>
                         <th id="eventType">Event Type: </th>
                         <th id="eventName">Event Name:</th>
                         <th id="eventDate">Event Date:</th>
@@ -44,22 +49,22 @@ function ViewEvents(){
                 </thead>
 
                 <tbody>
-                    {events.map((event) => (
+                    {events.map((evnt) => (
                     <tr key={eventId}>
-                        <td>{event.eventId}</td>
-                        <td>{event.eventType}</td>
-                        <td>{event.eventName}</td>
-                        <td>{event.setEventDate}</td>
-                        <td>{event.eventPrice}</td>
-                        <td>{event.locationId}</td>
-                        <td>{event.contactId}</td>
+                        <td>{evnt.eventId}</td>
+                        <td>{evnt.eventType}</td>
+                        <td>{evnt.eventName}</td>
+                        <td>{evnt.setEventDate}</td>
+                        <td>{evnt.eventPrice}</td>
+                        <td>{evnt.locationId}</td>
+                        <td>{evnt.contactId}</td>
                         <td>
                             <div className="float-right">
-                                <Link to={`/events/edit/${event.eventId}`} className="btn btn-primary btn-sm">
+                                <Link to={`/events/edit/${evnt.eventId}`} className="btn btn-primary btn-sm">
                                     Edit
                                 </Link>
 
-                                <Link to={`/events/delete/${event.eventId}`} className="btn btn-danger btn-sm ml-2">
+                                <Link to={`/events/delete/${evnt.eventId}`} className="btn btn-danger btn-sm ml-2">
                                     Delete
                                 </Link>
                                 

@@ -8,27 +8,11 @@ import { useState, useEffect } from "react"
 import {BrowserRouter as Router, Route,Switch} from "react-router-dom"
 import ViewEvents from "./Components/Events/ViewEvents"
 import AddEvents from "./Components/Events/AddEvents"
+import ViewPackage from "./Components/Packages/ViewPackage"
+import AddPackage from "./Components/Packages/AddPackage"
 
 
 function App(){
-
-    //make events and packages const to pass to view events and view packages
-    
-        
-        const [packages,setPackages] = useState([])
-
-        useEffect(() =>{
-            const getData = async () => {
-                try{
-                    const response = await fetch("http://localhost:8080/api/notBooking/packages");
-                    const data = await response.json();
-                    setPackages(data);
-                }catch(error){
-                    console.log(error);
-                };
-            }
-            getData();
-        });
     
 
     return(
@@ -36,31 +20,20 @@ function App(){
             <Router>
             <NavBar />
                 <Switch>
-                    <Route exact path = "/">
-                        <Home />
-                    </Route>      
+                    <Route exact path = "/">   <Home />   </Route>      
+                    <Route path = "/about">   <About />   </Route>
+                    <Route path = "/contact">   <Contact />   </Route>
                     
-                    <Route path = "/about">
-                        <About />
-                    </Route>
+                    <Route path = "/events/view">   <ViewEvents />   </Route>
+                    <Route path = "/events/add">   <AddEvents />   </Route>
+                    
+                    <Route path ="/packages/view" >   <ViewPackage/>   </Route>
+                    <Route path ="/packages/add" >   <AddPackage/>   </Route>
 
-                    <Route path = "/contact">
-                        <Contact />
-                    </Route>
-
-                    <Route path = "/events/view">
-                        <ViewEvents />
-                    </Route>
-
-                    <Route path = "/events/add">
-                        <AddEvents />
-                    </Route>
 
                     <Route>
                         <NotFound />
-                    </Route>
-
-                                  
+                    </Route>                                  
                 </Switch>
             </Router>
     )

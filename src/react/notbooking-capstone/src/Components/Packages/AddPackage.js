@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const DEFAULT_PACKAGE = {
     packageName: "",
@@ -88,7 +89,7 @@ function AddPackage(){
             </div>
 
             <button className="btn btn-success ml-2" type="submit">
-                Add Event
+                Add Package
             </button>
             <Link to="/" className="btn btn-warning ml-2" onClick={handleCancel}>Cancel</Link>
 

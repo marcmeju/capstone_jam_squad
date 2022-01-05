@@ -18,6 +18,10 @@ function NavBar(){
            <ul>
                <li><Link to ="/events/view">View Events</Link></li>
            </ul>
+
+           <ul>
+               <li><Link to ="/packages/view">View Packages</Link></li>
+           </ul>
        </nav>
    ) 
 }
