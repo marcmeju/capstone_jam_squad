@@ -12,7 +12,7 @@ import AddEvents from "./Components/Events/AddEvents"
 
 function App(){
 
-    //make events and packages props to pass to view events and view packages
+    //make events and packages const to pass to view events and view packages
     
         
         const [packages,setPackages] = useState([])
