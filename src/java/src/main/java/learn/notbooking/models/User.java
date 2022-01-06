@@ -6,6 +6,16 @@ public class User {
     private String passwordHash;
     private int userRoleId;
 
+    public User() {
+    }
+
+    public User(int userId, String userName, String passwordHash, int userRoleId) {
+        this.userId = userId;
+        this.userName = userName;
+        this.passwordHash = passwordHash;
+        this.userRoleId = userRoleId;
+    }
+
     public int getUserId() {
         return userId;
     }

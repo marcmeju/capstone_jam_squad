@@ -82,8 +82,9 @@ public class ContactService {
         }
 
         for(Contact sc : findAll()){
-            if (contact == sc){
+            if (  (contact == sc ) ){
                 result.addMessage("You have made this contact already", ResultType.INVALID);
+                //        (contact.getContactId() != sc.getContactId())
             }
             if (contact.getEmail().equalsIgnoreCase(sc.getEmail()) ){
                 result.addMessage("Email already exists", ResultType.INVALID);

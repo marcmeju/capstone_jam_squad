@@ -73,6 +73,10 @@ public class BookingService {
             result.addMessage("Customer ID is required", ResultType.INVALID);
         }
 
+        if (booking.getNumOfGuest() <=0) {
+            result.addMessage("Valid number of guests is required", ResultType.INVALID);
+        }
+
         for(Booking sc : findAll()){
             if (booking == sc){
                 result.addMessage("You have made this booking already", ResultType.INVALID);
