@@ -18,7 +18,7 @@ public class EventMapper implements RowMapper<Event> {
         event.setEventDate(resultSet.getString("event_date"));
         event.setEventPrice(resultSet.getInt("event_price"));
         event.setLocationId(resultSet.getInt("location_id"));
-        event.setContactId(resultSet.getInt("Contact_contact_id"));
+        event.setContactId(resultSet.getInt("contact_id"));
 
         return event;
 

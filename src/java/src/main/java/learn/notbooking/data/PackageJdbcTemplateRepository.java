@@ -23,7 +23,7 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
     @Override
     public List<Package> findAll() {
         final String sql = "select * "
-                + "from package ;";
+                + "from Package ;";
 
         return jdbcTemplate.query(sql, new PackageMapper());
 
@@ -43,7 +43,7 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
 
     @Override
     public Package add(Package pack) {
-        final String sql = "insert into package (package_name, tier_id, package_price) values (?, ?, ?);";
+        final String sql = "insert into Package (package_name, tier_id, package_price) values (?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
@@ -62,7 +62,7 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
 
     @Override
     public boolean update(Package pack) {
-        final String sql = "update package set `package_name` = ?, tier_id = ?, package_price = ?  where pack_id = ?;";
+        final String sql = "update Package set package_name = ?, tier_id = ?, package_price = ?  where package_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
                 pack.getPackageName(), pack.getTierId(), pack.getPackagePrice(), pack.getPackageId());
@@ -73,7 +73,7 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
 
     @Override
     public boolean deleteById(int packId) {
-        final String sql = "delete from package where package_id = ?;";
+        final String sql = "delete from Package where package_id = ?;";
         return jdbcTemplate.update(sql, packId) > 0;
     }
 }

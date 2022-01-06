@@ -42,7 +42,7 @@ public class CustomerJdbcTemplateRepository implements CustomerRepository{
 
     @Override
     public Customer add(Customer customer) {
-        final String sql = "insert into customer (customer_city, customer_state, customer_address, customer_zipcode) values (?, ?, ?, ?);";
+        final String sql = "insert into Customer (customer_first_name, customer_last_name, user_id, contact_id) values (?, ?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
@@ -62,7 +62,7 @@ public class CustomerJdbcTemplateRepository implements CustomerRepository{
 
     @Override
     public boolean update(Customer customer) {
-        final String sql = "update customer set customer_first_name = ?, customer_last_name = ?, user_id = ?, Contact_contact_id = ?  where customer_id = ?;";
+        final String sql = "update Customer set customer_first_name = ?, customer_last_name = ?, user_id = ?, contact_id = ?  where customer_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
                 customer.getCustomerFirstName(), customer.getCustomerLastName(), customer.getUserId(), customer.getContactId(), customer.getCustomerId());
@@ -72,7 +72,7 @@ public class CustomerJdbcTemplateRepository implements CustomerRepository{
 
     @Override
     public boolean deleteById(int customerId) {
-        final String sql = "delete from customer where customer_id = ?;";
+        final String sql = "delete from Customer where customer_id = ?;";
         return jdbcTemplate.update(sql, customerId) > 0;
     }
 }

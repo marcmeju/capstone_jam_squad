@@ -42,7 +42,7 @@ public class EventJdbcTemplateRepository implements EventRepository{
 
     @Override
     public Event add(Event event) {
-        final String sql = "insert into event (event_type, event_name, event_date, event_price, location_id, Contact_contact_id) values (?, ?, ?, ?, ?, ?);";
+        final String sql = "insert into Event (event_type, event_name, event_date, event_price, location_id, contact_id) values (?, ?, ?, ?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
@@ -64,7 +64,7 @@ public class EventJdbcTemplateRepository implements EventRepository{
 
     @Override
     public boolean update(Event event) {
-        final String sql = "update event set event_type = ?, event_name = ?, event_date = ?, event_price = ? , location_id = ?, Contact_contact_id = ?  where event_id = ?;";
+        final String sql = "update Event set event_type = ?, event_name = ?, event_date = ?, event_price = ? , location_id = ?, contact_id = ?  where event_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
                 event.getEventType(), event.getEventName(), event.getEventDate(), event.getEventPrice(), event.getLocationId(), event.getContactId(), event.getEventId());
@@ -74,7 +74,7 @@ public class EventJdbcTemplateRepository implements EventRepository{
 
     @Override
     public boolean deleteById(int eventId) {
-        final String sql = "delete from event where event_id = ?;";
+        final String sql = "delete from Event where event_id = ?;";
         return jdbcTemplate.update(sql, eventId) > 0;
     }
 

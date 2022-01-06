@@ -27,11 +27,10 @@ public class PackageEventJdbcTemplateRepository implements PackageEventRepositor
 
     @Override
     public boolean add(PackageEvent packageEvent) {
-        final String sql = "insert into PackageEvent (package_id, customer_id) values (?, ?);";
+        final String sql = "insert into Package_event (event_id, package_id) values (?, ?);";
 
 
         return jdbcTemplate.update(sql,
-                packageEvent.getPackageEventId(),
                 packageEvent.getEventId(),
                 packageEvent.getPackageId()) > 0;
 

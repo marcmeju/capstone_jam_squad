@@ -61,7 +61,7 @@ public class UserRoleJdbcTemplateRepository implements UserRoleRepository{
 
     @Override
     public boolean update(UserRole userRole) {
-        final String sql = "update user_role set `role_name` = ? where user_role_id = ?;";
+        final String sql = "update user_role set role_name = ? where user_role_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
                 userRole.getRoleName(), userRole.getUserRoleId() );
@@ -71,7 +71,7 @@ public class UserRoleJdbcTemplateRepository implements UserRoleRepository{
 
     @Override
     public boolean deleteById(int userRoleId) {
-        final String sql = "delete from user-role where user_role_id = ?;";
+        final String sql = "delete from user_role where user_role_id = ?;";
         return jdbcTemplate.update(sql, userRoleId) > 0;
     }
 }

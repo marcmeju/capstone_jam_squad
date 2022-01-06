@@ -44,7 +44,7 @@ public class LocationJdbcTemplateRepository implements LocationRepository {
 
     @Override
     public Location add(Location location) {
-        final String sql = "insert into location (location_city, location_state, location_address, location_zipcode) values (?, ?, ?, ?);";
+        final String sql = "insert into Location (location_city, location_state, location_address, location_zipcode) values (?, ?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
@@ -64,7 +64,7 @@ public class LocationJdbcTemplateRepository implements LocationRepository {
 
     @Override
     public boolean update(Location location) {
-        final String sql = "update location set location_city = ?, location_state = ?, location_address = ?, location_zipcode = ?  where location_id = ?;";
+        final String sql = "update Location set location_city = ?, location_state = ?, location_address = ?, location_zipcode = ?  where location_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
                 location.getLocationCity(), location.getLocationState(), location.getLocationAddress(), location.getLocationZipCode(), location.getLocationId());

@@ -23,7 +23,7 @@ public class TierJdbcTemplateRepository implements TierRepository {
     @Override
     public List<Tier> findAll() {
         final String sql = "select * "
-                + "from tier ;";
+                + "from Tier ;";
 
         return jdbcTemplate.query(sql, new TierMapper());
 
@@ -32,8 +32,8 @@ public class TierJdbcTemplateRepository implements TierRepository {
     @Override
     public Tier findById(int tierId) {
 
-        final String sql = "select tier_id, name tier_name "
-                + "from tier "
+        final String sql = "select tier_id, tier_name, tier_desc"
+                + "from Tier "
                 + "where tier_id = ?;";
 
         return jdbcTemplate.query(sql, new TierMapper(), tierId)
@@ -43,7 +43,7 @@ public class TierJdbcTemplateRepository implements TierRepository {
 
     @Override
     public Tier add(Tier tier) {
-        final String sql = "insert into tier (tier_name, tier_desc) values (?, ?);";
+        final String sql = "insert into Tier (tier_name, tier_desc) values (?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
@@ -61,7 +61,7 @@ public class TierJdbcTemplateRepository implements TierRepository {
 
     @Override
     public boolean update(Tier tier) {
-        final String sql = "update tier set `tier_name` = ?, tier_desc = ?  where tier_id = ?;";
+        final String sql = "update Tier set `tier_name` = ?, tier_desc = ?  where tier_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
                 tier.getTierName(), tier.getTierDescription(), tier.getTierId());
@@ -72,7 +72,7 @@ public class TierJdbcTemplateRepository implements TierRepository {
 
     @Override
     public boolean deleteById(int tierId) {
-        final String sql = "delete from tier where tier_id = ?;";
+        final String sql = "delete from Tier where tier_id = ?;";
         return jdbcTemplate.update(sql, tierId) > 0;
     }
 

@@ -42,7 +42,7 @@ public class ContactJdbcTemplateRepository implements ContactRepository {
 
     @Override
     public Contact add(Contact contact) {
-        final String sql = "insert into contact (phone, email, contact_type) values (?, ?, ?);";
+        final String sql = "insert into Contact (phone, email, contact_type) values (?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
@@ -62,8 +62,9 @@ public class ContactJdbcTemplateRepository implements ContactRepository {
 
     @Override
     public boolean update(Contact contact) {
-        final String sql = "update contact set phone = ?, email = ?, contact_type = ?  where contact_id = ?;";
+        final String sql = "update Contact set phone = ?, email = ?, contact_type = ?  where contact_id = ?;";
 
+        System.out.println("Printing out ---> " + contact.getPhone() + contact.getEmail() + contact.getContactType() + contact.getContactId());
         int rowsUpdated = jdbcTemplate.update(sql,
                 contact.getPhone(), contact.getEmail(), contact.getContactType(), contact.getContactId());
 
@@ -72,7 +73,7 @@ public class ContactJdbcTemplateRepository implements ContactRepository {
 
     @Override
     public boolean deleteById(int contactId) {
-        final String sql = "delete from contact where contact_id = ?;";
+        final String sql = "delete from Contact where contact_id = ?;";
         return jdbcTemplate.update(sql, contactId) > 0;
     }
 
