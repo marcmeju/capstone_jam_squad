@@ -32,8 +32,8 @@ public class TierJdbcTemplateRepository implements TierRepository {
     @Override
     public Tier findById(int tierId) {
 
-        final String sql = "select tier_id, tier_name, tier_desc"
-                + "from Tier "
+        final String sql = "select * "
+                + " from Tier "
                 + "where tier_id = ?;";
 
         return jdbcTemplate.query(sql, new TierMapper(), tierId)

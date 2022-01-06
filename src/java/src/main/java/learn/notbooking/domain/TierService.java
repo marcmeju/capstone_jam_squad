@@ -72,11 +72,11 @@ public class TierService {
             result.addMessage("Description is required", ResultType.INVALID);
         }
 
-        for(Tier sc : findAll()){
-            if (tier.getTierName().trim().equalsIgnoreCase(sc.getTierName())){
-                result.addMessage("name already exists", ResultType.INVALID);
-            }
-        }
+//        for(Tier sc : findAll()){
+//            if (tier.getTierName().trim().equalsIgnoreCase(sc.getTierName())){
+//                result.addMessage("name already exists", ResultType.INVALID);
+//            }
+ //       }
 
 
         return result;

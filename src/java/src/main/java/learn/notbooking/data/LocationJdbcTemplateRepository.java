@@ -74,7 +74,7 @@ public class LocationJdbcTemplateRepository implements LocationRepository {
 
     @Override
     public boolean deleteById(int locationId) {
-        final String sql = "delete from location where location_id = ?;";
+        final String sql = "delete from Location where location_id = ?;";
         return jdbcTemplate.update(sql, locationId) > 0;
     }
 }

@@ -64,7 +64,7 @@ public class ContactJdbcTemplateRepository implements ContactRepository {
     public boolean update(Contact contact) {
         final String sql = "update Contact set phone = ?, email = ?, contact_type = ?  where contact_id = ?;";
 
-        System.out.println("Printing out ---> " + contact.getPhone() + contact.getEmail() + contact.getContactType() + contact.getContactId());
+  //      System.out.println("Printing out ---> " + contact.getPhone() + contact.getEmail() + contact.getContactType() + contact.getContactId());
         int rowsUpdated = jdbcTemplate.update(sql,
                 contact.getPhone(), contact.getEmail(), contact.getContactType(), contact.getContactId());
 

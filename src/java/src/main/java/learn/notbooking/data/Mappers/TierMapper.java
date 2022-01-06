@@ -16,8 +16,8 @@ public class TierMapper implements RowMapper<Tier> {
         tier.setTierName(resultSet.getString("tier_name"));
         tier.setTierDescription(resultSet.getString("tier_desc"));
 
-        PackageMapper packageMapper = new PackageMapper();
-        tier.setPack(packageMapper.mapRow(resultSet, i));
+        //PackageMapper packageMapper = new PackageMapper();
+      //  tier.setPack(packageMapper.mapRow(resultSet, i));
 
         return tier;
     }
