@@ -6,9 +6,9 @@ function SelectLocation(){
         // look at examples of dynamic routing to account for each scenario
 
         <>
-        <Link to="/nyc">NYC</Link>
-        <Link to="/chicago">Chicago</Link>
-        <Link to="/la">Los Angelos</Link>
+        <Link to="/nyc" className="btn btn-primary btn-sm">NYC</Link>
+        <Link to="/chicago" className="btn btn-primary btn-sm">Chicago</Link>
+        <Link to="/la" className="btn btn-primary btn-sm">Los Angelos</Link>
         </>
     )
 

@@ -11,7 +11,7 @@ function Event(props){
     const [contact,setContact] = useState({})
     const [location,setLocation] = useState("")
 
-    
+    //pull event info from an event id
 
     
 }
