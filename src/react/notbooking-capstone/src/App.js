@@ -30,6 +30,7 @@ function App(){
                     <Route path ="/packages/view" >   <ViewPackage/>   </Route>
                     <Route path ="/packages/add" >   <AddPackage/>   </Route>
 
+                    <Route path={`/${location}`}></Route>
 
                     <Route>
                         <NotFound />

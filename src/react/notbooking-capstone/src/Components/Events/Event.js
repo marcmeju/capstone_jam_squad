@@ -13,12 +13,7 @@ function Event(props){
 
     
 
-    const evnt {
-        eventType
-
-    }
-
-    object(param)
+    
 }
 
 export default Event
