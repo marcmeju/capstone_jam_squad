@@ -8,7 +8,7 @@ import java.util.List;
 public interface PackageRepository {
     List<Package> findAll();
     Package findById(int packId);
-    public PackageDetails findPackageDetailsById(int packId);
+    public List<PackageDetails> findPackageDetailsById(int packId);
 
     Package add(Package pack);
 

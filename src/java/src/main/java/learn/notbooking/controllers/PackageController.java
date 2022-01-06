@@ -46,8 +46,8 @@ public class PackageController {
     }
 
     @GetMapping("/{packId}/details")
-    public ResponseEntity<PackageDetails> findPackageDetailsById(@PathVariable int packId) {
-        PackageDetails packageDetails = service.findPackageDetailsById(packId);
+    public ResponseEntity< List<PackageDetails> > findPackageDetailsById(@PathVariable int packId) {
+        List <PackageDetails> packageDetails = service.findPackageDetailsById(packId);
         try{
             if (packageDetails == null) {
                 return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);

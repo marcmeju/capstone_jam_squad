@@ -23,7 +23,7 @@ public class PackageService {
         return repository.findAll();
     }
 
-public PackageDetails findPackageDetailsById(int packId){
+public List <PackageDetails> findPackageDetailsById(int packId){
 
     return repository.findPackageDetailsById(packId);
 }

@@ -3,7 +3,6 @@ package learn.notbooking.data;
 import learn.notbooking.data.Mappers.PackageDetailsMapper;
 import learn.notbooking.data.Mappers.PackageMapper;
 import learn.notbooking.models.Package;
-import learn.notbooking.models.Package;
 import learn.notbooking.models.PackageDetails;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -44,7 +43,7 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
     }
 
     @Override
-    public PackageDetails findPackageDetailsById(int packId){
+    public List<PackageDetails> findPackageDetailsById(int packId){
         final String sql = "select pkg.package_id, pkg.package_name , eve.event_name, eve.event_date, lctn.location_city, lctn.location_state, cnt.email, cnt.phone\n" +
                 "from not_booking.Package pkg\n" +
                 "inner join not_booking.Package_event pkeve\n" +
@@ -57,9 +56,9 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
                 "using(contact_id)\n" +
                 "where pkg.package_id = ?;";
 
-        return jdbcTemplate.query(sql, new PackageDetailsMapper(), packId)
-                .stream()
-                .findFirst().orElse(null);
+        return jdbcTemplate.query(sql, new PackageDetailsMapper(), packId);
+//                .stream()
+//                .findAny().orElse(null);
     }
 
     @Override
