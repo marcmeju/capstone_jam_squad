@@ -2,6 +2,7 @@ package learn.notbooking.domain;
 
 import learn.notbooking.data.PackageRepository;
 import learn.notbooking.models.Package;
+import learn.notbooking.models.PackageDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +22,11 @@ public class PackageService {
     public List<Package> findAll() {
         return repository.findAll();
     }
+
+public PackageDetails findPackageDetailsById(int packId){
+
+    return repository.findPackageDetailsById(packId);
+}
 
 
     public Result<Package> add(Package pack) {

@@ -4,6 +4,7 @@ import learn.notbooking.domain.Result;
 import learn.notbooking.domain.ResultType;
 import learn.notbooking.domain.PackageService;
 import learn.notbooking.models.Package;
+import learn.notbooking.models.PackageDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +30,8 @@ public class PackageController {
 
     }
 
+
+
     @GetMapping("/{packId}")
     public ResponseEntity<Package> findById(@PathVariable int packId) {
         Package pack = service.findById(packId);
@@ -41,6 +44,20 @@ public class PackageController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    @GetMapping("/{packId}/details")
+    public ResponseEntity<PackageDetails> findPackageDetailsById(@PathVariable int packId) {
+        PackageDetails packageDetails = service.findPackageDetailsById(packId);
+        try{
+            if (packageDetails == null) {
+                return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(packageDetails, HttpStatus.OK);
+        }catch (Exception ex){
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 
     @PostMapping
     public ResponseEntity<Package> add(@RequestBody Package pack) {

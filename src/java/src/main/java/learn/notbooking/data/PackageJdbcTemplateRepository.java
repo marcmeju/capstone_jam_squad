@@ -1,8 +1,10 @@
 package learn.notbooking.data;
 
+import learn.notbooking.data.Mappers.PackageDetailsMapper;
 import learn.notbooking.data.Mappers.PackageMapper;
 import learn.notbooking.models.Package;
 import learn.notbooking.models.Package;
+import learn.notbooking.models.PackageDetails;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -37,6 +39,25 @@ public class PackageJdbcTemplateRepository implements PackageRepository {
                 + "where package_id = ?;";
 
         return jdbcTemplate.query(sql, new PackageMapper(), packId)
+                .stream()
+                .findFirst().orElse(null);
+    }
+
+    @Override
+    public PackageDetails findPackageDetailsById(int packId){
+        final String sql = "select pkg.package_id, pkg.package_name , eve.event_name, eve.event_date, lctn.location_city, lctn.location_state, cnt.email, cnt.phone\n" +
+                "from not_booking.Package pkg\n" +
+                "inner join not_booking.Package_event pkeve\n" +
+                "using(package_id)\n" +
+                "inner join not_booking.Event eve\n" +
+                "using(event_id)\n" +
+                "inner join not_booking.Location lctn\n" +
+                "using(location_id)\n" +
+                "inner join not_booking.Contact cnt\n" +
+                "using(contact_id)\n" +
+                "where pkg.package_id = ?;";
+
+        return jdbcTemplate.query(sql, new PackageDetailsMapper(), packId)
                 .stream()
                 .findFirst().orElse(null);
     }
