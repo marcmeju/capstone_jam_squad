@@ -4,7 +4,8 @@ function Home(){
     return(
         <>
         <h2>Home</h2>
-        <SelectLocation/>
+        <p>Which Location would you like to see events for?</p>
+        <SelectLocation />
         </>
     );
 }

@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 
-function SelectLocation(){
+function SelectLocation(props){
 
     return(
         // look at examples of dynamic routing to account for each scenario
 
         <>
-        <Link to="/nyc" className="btn btn-primary btn-sm">NYC</Link>
-        <Link to="/chicago" className="btn btn-primary btn-sm">Chicago</Link>
-        <Link to="/la" className="btn btn-primary btn-sm">Los Angelos</Link>
+        <p><Link to={`/${"nyc"}`} >NYC</Link></p>
+        <p><Link to={`/${"chicago"}`}  >Chicago</Link></p>
+        <p><Link to={`/${"la"}`}  >Los Angeles</Link></p>
         </>
     )
 

@@ -10,6 +10,7 @@ import ViewEvents from "./Components/Events/ViewEvents"
 import AddEvents from "./Components/Events/AddEvents"
 import ViewPackage from "./Components/Packages/ViewPackage"
 import AddPackage from "./Components/Packages/AddPackage"
+import SelectTier from "./Components/Selections/SelectTier"
 
 
 function App(){
@@ -20,7 +21,7 @@ function App(){
             <Router>
             <NavBar />
                 <Switch>
-                    <Route exact path = "/">   <Home />   </Route>      
+                    <Route exact path = "/">   <Home/>   </Route>      
                     <Route path = "/about">   <About />   </Route>
                     <Route path = "/contact">   <Contact />   </Route>
                     
@@ -30,7 +31,8 @@ function App(){
                     <Route path ="/packages/view" >   <ViewPackage/>   </Route>
                     <Route path ="/packages/add" >   <AddPackage/>   </Route>
 
-                    <Route path={`/${location}`}></Route>
+                    <Route path={`/:location`}>   <SelectTier/>   </Route>
+                    <Route path={`/:location/:tierId`}></Route>
 
                     <Route>
                         <NotFound />
