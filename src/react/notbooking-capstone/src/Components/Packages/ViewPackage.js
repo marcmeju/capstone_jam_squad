@@ -26,11 +26,11 @@ function ViewPackage(){
                     <thead>
                         <tr>
                             <th id="packageId">Package ID:</th>
-                            <th id="tierId">Tier ID:</th>
+                            <th id="packageName">Package Name:</th>
                             <th id="Events">Event Name:</th>
+                            <th id="date">Date of Event:</th>
                             <th id="locationofEvents">Location:</th>
                             <th id="contact">Contact Info:</th>
-                            <th id="date">Date of Event:</th>
                         </tr>
                     </thead>
 
@@ -39,7 +39,7 @@ function ViewPackage(){
                             <tr key={packageId}>
                                 <td>{packge.packageId}</td>
                                 <td>{packge.tierId}</td>
-                                <td>{packge.tierName}</td>
+                                <td>{packge.packageName}</td>
                                 {/* we need to figure out a way to extract the location information 
                                 and event information from ids through queeries, 
                                 or throuhg instances of package examples.
