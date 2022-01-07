@@ -6,9 +6,9 @@ function SelectLocation(props){
         // look at examples of dynamic routing to account for each scenario
 
         <>
-        <p><Link to={`/${"nyc"}`} >NYC</Link></p>
-        <p><Link to={`/${"chicago"}`}  >Chicago</Link></p>
-        <p><Link to={`/${"la"}`}  >Los Angeles</Link></p>
+        <p><Link to={`/tier/${"nyc"}`} >NYC</Link></p>
+        <p><Link to={`/tier/${"chicago"}`}  >Chicago</Link></p>
+        <p><Link to={`/tier/${"la"}`}  >Los Angeles</Link></p>
         </>
     )
 
