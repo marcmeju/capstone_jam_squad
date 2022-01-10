@@ -117,7 +117,7 @@ CREATE TABLE IF NOT EXISTS `not_booking_test`.`user_role` (
 -- -----------------------------------------------------
 -- Table `not_booking_test`.`user`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `not_booking_test`.`user` ;
+DROP TABLE IF EXISTS `not_booking_test`.`User` ;
 
 CREATE TABLE IF NOT EXISTS `not_booking_test`.`user` (
   `user_id` INT NOT NULL AUTO_INCREMENT,

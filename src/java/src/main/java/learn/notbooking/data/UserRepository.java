@@ -1,16 +1,19 @@
 package learn.notbooking.data;
 
-import learn.notbooking.models.User;
+import learn.notbooking.models.AppUser;
+
 
 import java.util.List;
 
 public interface UserRepository {
-    List<User> findAll();
-    User findById(int userId);
+    List<AppUser> findAll();
+    AppUser findById(int userId);
 
-    User add(User user);
+    AppUser add(AppUser user);
 
-    boolean update(User user);
+    boolean update(AppUser user);
+
+
 
     boolean deleteById(int userId);
 }

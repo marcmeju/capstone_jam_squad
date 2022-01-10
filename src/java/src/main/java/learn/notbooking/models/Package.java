@@ -10,6 +10,16 @@ private int tierId;
 private int packagePrice;
 private List<Event> events = new ArrayList<>();
 
+    public Package() {
+    }
+
+    public Package(int packageId, String packageName, int tierId, int packagePrice) {
+        this.packageId = packageId;
+        this.packageName = packageName;
+        this.tierId = tierId;
+        this.packagePrice = packagePrice;
+    }
+
     public int getPackageId() {
         return packageId;
     }

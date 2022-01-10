@@ -7,6 +7,17 @@ public class Customer {
     private int userId;
     private int contactId;
 
+    public Customer() {
+    }
+
+    public Customer(int customerId, String customerFirstName, String customerLastName, int userId, int contactId) {
+        this.customerId = customerId;
+        this.customerFirstName = customerFirstName;
+        this.customerLastName = customerLastName;
+        this.userId = userId;
+        this.contactId = contactId;
+    }
+
     public int getCustomerId() {
         return customerId;
     }
