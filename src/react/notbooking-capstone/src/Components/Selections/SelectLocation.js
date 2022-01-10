@@ -1,53 +1,33 @@
 import { Link } from "react-router-dom"
+import nyc from "../NYC.jpeg"
+import chicago from "../Chicago.jpeg"
+import la from "../la.jpg"
+
 import React,{ useEffect, useState } from "react"
 
 function SelectLocation(){
 
-    const [locations,setLocations] = useState([])
-    const [distinct,setDistinct] = useState([])
-    
-    useEffect(()=>{
-        const getData= async () =>{
-            try{
-                const response = await fetch("http://localhost:8080/location")
-                const data = await response.json();
-                setLocations(data)
-            }catch(error){
-                console.log(error)
-            }
-            let temp = [...new Set(locations.map(loc=>loc.locationCity))].sort();
-            setDistinct(temp)
-        }
-        getData();
-    });
 
-    return( distinct && 
+
+    return( 
         // look at examples of dynamic routing to account for each scenario
         <>
-<<<<<<< HEAD
-            <div>
+            <div >
                 <table>
-                    <thead>
-                        <tr>
-                            <th id="city">Choose a location to explore your vacation!</th>
-                        </tr>
-                    </thead>
+                <tbody>
+        <tr><td>New York Package</td><td><Link to={`/city/${"nyc"}`} ><img src={nyc} alt="nyc" width="300" height="200" /></Link></td></tr>
+        <td>&nbsp;</td>
+        <tr><td>Chicago Package   </td> <td><Link to={`/city/${"chicago"}`}  ><img src={chicago} alt="chicago" width="300" height="200" /></Link></td>
+        </tr>
+        <tr><td>     &nbsp;     </td></tr>
+        <tr><td>Los Angeles Package </td><td ><Link to={`/city/${"la"}`}  ><img src={la} alt="la" width="300" height="200" /></Link></td></tr>
 
-                    <tbody>
-                        {distinct.map((loc)=>(
-                            <tr>
-                              <td><Link to={`/tier/${loc}`}>{loc}</Link></td>
-                            </tr>   
-                        ))}
-                    </tbody>
+        
+        
+        </tbody>
 
                 </table>
             </div>
-=======
-        <p><Link to={`/tier/${"nyc"}`} >NYC</Link></p>
-        <p><Link to={`/tier/${"chicago"}`}  >Chicago</Link></p>
-        <p><Link to={`/tier/${"la"}`}  >Los Angeles</Link></p>
->>>>>>> 9dbf6649a915b12c07a3a608fb7b7013f30920e1
         </>
                 
     )
