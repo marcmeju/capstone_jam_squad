@@ -15,6 +15,19 @@ import SelectTier from "./Components/Selections/SelectTier"
 
 function App(){
     
+    const [userStatus, setUserStatus] = useState({
+        user: null,
+        login(username) {
+          // Use previous state to preserve login and logout methods when updating user
+          setUserStatus((prev) => ({ ...prev, user: username }));
+        },
+        logout() {
+          // "token" must match the name used in "/Login" route
+          localStorage.removeItem("token");
+          setUserStatus((prev) => ({ ...prev, user: null }));
+        },
+      });
+      
 
     return(
             
@@ -31,8 +44,8 @@ function App(){
                     <Route path ="/packages/view" >   <ViewPackage/>   </Route>
                     <Route path ="/packages/add" >   <AddPackage/>   </Route>
 
-                    <Route path={`/:location`}>   <SelectTier/>   </Route>
-                    <Route path={`/:location/:tierId`}></Route>
+                    <Route path={`/tier/:location`}>   <SelectTier/>   </Route>
+                    <Route path={`/package/:location/:tierId`}></Route>
 
                     <Route>
                         <NotFound />

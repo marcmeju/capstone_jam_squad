@@ -1,14 +1,53 @@
-import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min"
+import{Link} from "react-router-dom"
+import React,{useState,useEffect} from "react"
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 function SelectTier(){
-    //  This page will have a description of each tier along with a few examples
-    //  The tricky part of this page will be displaying them vertically accross the page
-    //  Before seting up this page I'll need to do some research into how to make them appear vertically
+    
     const {location} = useParams();
-    return(
+    const [tiers,setTiers] = useState([])
+
+    useEffect(()=>{
+        const getData = async() =>{
+            try{
+                const response = await fetch("http://localhost:8080/tier")
+                const data = await response.json();
+                setTiers(data)
+            }catch(error){
+                console.log(error)
+            }
+        }
+        getData()
+        console.log(tiers)
+    })
+
+    return(tiers &&
     <>
-    <p>Which Tier would you like to select from {location}</p>
-    <Link to={`/${location}/${1}`}>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Which Tier would you like to select from {location}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {tiers.map((tier)=>(
+                   <tr key={tier.tierId}>
+                       <Link to={`/package/${location}/${tier.tierId}`}>
+                       <td>{tier.tierName} : {tier.tierDescription} </td>
+                       </Link>
+                   </tr> 
+                ))}
+            </tbody>
+        </table>
+    </div>
+
+
+
+    
+    {/* <Link to={`/${location}/${1}`}>
     <p>Package 1: Choose from packages with 2 days 4 events</p>
     </Link>
     <Link to={`/${location}/${2}`}>
@@ -16,7 +55,7 @@ function SelectTier(){
     </Link>
     <Link to={`/${location}/${3}`}>
     <p>Package 3: Mix your own package for either 2 days 3 events, or 3 days 5 events </p>
-    </Link>
+    </Link> */}
     </>
     )
 }

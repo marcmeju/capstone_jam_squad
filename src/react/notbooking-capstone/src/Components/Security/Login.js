@@ -1,10 +1,11 @@
 import { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import AuthContext from '../AuthContext';
-
+import jwtDecode from 'jwt-decode';
 import Errors from './Errors';
 
 function Login() {
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState([]);
