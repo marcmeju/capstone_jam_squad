@@ -49,6 +49,7 @@ function App(){
 
                     <Route path={`/city/:location`}>  <SelectTier/>   </Route>
                     <Route path={`/package/:location/:tierId`}> <Packages/> </Route>
+                    <Route path ={`/events/:location/:tierId/:packageId`}><ViewEvents/></Route>
                    <Route path = {`/booking/cart/:packageId`}> <ViewBooking/></Route>
                     <Route path = {`/booking/delete`}><DeleteBooking/></Route>
 

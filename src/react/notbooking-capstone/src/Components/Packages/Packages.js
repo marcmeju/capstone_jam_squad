@@ -79,22 +79,22 @@ function Packages(){
                  <td> {packages.packageName}</td>
                  <td> {packages.tierId}</td>
                  <td> ${packages.packagePrice}</td>
-                 <td><button onClick = {()=> showEvent(packages.packageId)}>View Events</button></td>
-                 
+                 {/* <td><button onClick = {()=> showEvent(packages.packageId)}>View Events</button></td> */}
+                 <td><Link to={`/events/${location}/${tierId}/${packages.packageId}`}>
+                     <button> View Events</button>
+                     </Link></td>
                  </tr>
             ))}
          </tbody>
      </table>
      </div>
 
-     <div hidden={displayEvent}>
-        <ViewEvents packageId={packageId} />
+     {/* <div hidden={displayEvent}>
+        <ViewEvents packageId={packageId} /> */}
         
-        <Link to={`/booking/cart/${packageId}`} >
-        <button >Book Package</button>
-                  </Link>
-
-     </div>
+        
+       
+    
 
      <div hidden={!vipPackage}>
          <VipPackage/>
