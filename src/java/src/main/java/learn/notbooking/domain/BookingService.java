@@ -23,6 +23,9 @@ public class BookingService {
         return repository.findAll();
     }
 
+    public Booking findBookingByCustomerId(int customerId){
+        return repository.findBookingByCustomerId(customerId);
+    }
 
     public Result<Booking> add(Booking booking) {
         Result<Booking> result = validate(booking);

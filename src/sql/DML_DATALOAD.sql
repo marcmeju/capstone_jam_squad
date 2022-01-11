@@ -126,6 +126,29 @@ on tr.tier_name = pdd.Tier
 group by pdd.Package_Name, tr.tier_id;
 
 SELECT * FROM not_booking.Package;
+-- -----------------------------------------------------
+-- Adding name "combo" to express 6 packages
+-- -----------------------------------------------------
+
+update not_booking.Package
+set package_name = concat(package_name, ' - Combo')
+WHERE package_name like '% Express 6'
+and package_id<>-1;
+
+update not_booking.Package
+set package_name = concat(package_name, ' - Combo')
+WHERE package_name = 'Chicago Express 4'
+and package_id<>-1;
+
+
+-- -----------------------------------------------------
+-- Removing space and - in Newyork Elite packages
+-- -----------------------------------------------------
+update not_booking.Package pkg
+set pkg.package_name =  concat(substring(pkg.package_name, 1,14), substring(pkg.package_name, 17,1)) 
+WHERE package_name like 'NewYork Elite%'
+and package_id<>-1;
+
 
 -- -----------------------------------------------------
 -- Fixing the space issue in the Evenr_type column`

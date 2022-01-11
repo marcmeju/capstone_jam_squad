@@ -1,16 +1,30 @@
 package learn.notbooking.data;
 
-import learn.notbooking.models.User;
+import learn.notbooking.models.AppUser;
+import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 
 public interface UserRepository {
-    List<User> findAll();
-    User findById(int userId);
+    List<AppUser> findAll();
+    AppUser findById(int userId);
 
-    User add(User user);
+    @Transactional
+    AppUser findByUsername(String username);
 
-    boolean update(User user);
+    @Transactional
+    AppUser create(AppUser user);
+
+    @Transactional
+    boolean update(AppUser user);
+
+
+    AppUser add(AppUser user);
+
+//    boolean update(AppUser user);
+
+
 
     boolean deleteById(int userId);
 }

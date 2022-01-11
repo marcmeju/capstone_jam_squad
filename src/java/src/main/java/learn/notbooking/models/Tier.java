@@ -5,6 +5,16 @@ public class Tier {
     private String tierName;
     private String tierDescription;
 
+    public Tier() {
+    }
+
+    public Tier(int tierId, String tierName, String tierDescription) {
+        this.tierId = tierId;
+        this.tierName = tierName;
+        this.tierDescription = tierDescription;
+
+    }
+
     public Package getPack() {
         return pack;
     }

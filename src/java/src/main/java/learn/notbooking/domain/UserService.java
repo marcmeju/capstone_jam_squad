@@ -1,7 +1,7 @@
 package learn.notbooking.domain;
 
 import learn.notbooking.data.UserRepository;
-import learn.notbooking.models.User;
+import learn.notbooking.models.AppUser;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,28 +15,28 @@ public class UserService {
     }
 
 
-    public User findById(int userId){return repository.findById(userId);}
+    public AppUser findById(int userId){return repository.findById(userId);}
 
 
-    public List<User> findAll() {
+    public List<AppUser> findAll() {
         return repository.findAll();
     }
 
 
-    public Result<User> add(User user) {
-        Result<User> result = validate(user);
+    public Result<AppUser> add(AppUser user) {
+        Result<AppUser> result = validate(user);
         if (result.getType() != ResultType.SUCCESS) {
             return result;
         }
 
-        User p = repository.add(user);
+        AppUser p = repository.add(user);
         result.setPayload(p);
         return result;
     }
 
 
-    public Result<User> update(User user) {
-        Result<User> result = validate(user);
+    public Result<AppUser> update(AppUser user) {
+        Result<AppUser> result = validate(user);
         if (result.getType() != ResultType.SUCCESS) {
             return result;
         }
@@ -56,8 +56,8 @@ public class UserService {
 
 
     // ********************** validate ************************
-    private Result<User> validate(User user) {
-        Result<User> result = new Result<>();
+    private Result<AppUser> validate(AppUser user) {
+        Result<AppUser> result = new Result<>();
 
         if (user == null) {
             result.addMessage("user cannot be null", ResultType.INVALID);
@@ -72,7 +72,7 @@ public class UserService {
             result.addMessage("Password is required", ResultType.INVALID);
         }
 
-        for(User sc : findAll()){
+        for(AppUser sc : findAll()){
             if (user.getUserName().trim().equalsIgnoreCase(sc.getUserName())){
                 result.addMessage("Username already exists", ResultType.INVALID);
             }

@@ -35,7 +35,7 @@ where contact_type='Customer'
 and contact_id=67;
 
 
-select pkg.package_name , eve.event_name, eve.event_date, lctn.location_city, lctn.location_state, cnt.email, cnt.phone
+select pkg.package_id, pkg.package_name , eve.event_name, eve.event_date, lctn.location_city, lctn.location_state, cnt.email, cnt.phone
 from not_booking.Package pkg
 inner join not_booking.Package_event pkeve
 using(package_id)
@@ -45,10 +45,24 @@ inner join not_booking.Location lctn
 using(location_id)
 inner join not_booking.Contact cnt
 using(contact_id)
-where pkg.package_id = 2
+where pkg.package_id = 2;
 
 
-SELECT * FROM not_booking.Package
+SELECT * FROM not_booking.Package;
 
-select * from not_booking.Booking
+select * from not_booking.Booking;
+
+SELECT pkg.package_name, concat(substring(pkg.package_name, 1,14), substring(pkg.package_name, 17,1)) FROM not_booking.Package pkg
+WHERE package_name like 'NewYork Elite%';
+
+
+update not_booking.Package
+set package_name = concat(package_name, ' - Combo')
+WHERE package_name = 'Chicago Express 4'
+and package_id<>-1;
+
+update not_booking.Package pkg
+set pkg.package_name =  concat(substring(pkg.package_name, 1,14), substring(pkg.package_name, 17,1)) 
+WHERE package_name like 'NewYork Elite%'
+and package_id<>-1;
 

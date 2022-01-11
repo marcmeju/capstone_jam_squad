@@ -7,6 +7,17 @@ public class Location {
     private String locationState;
     private int locationZipCode;
 
+    public Location() {
+    }
+
+    public Location(int locationId, String locationAddress, String locationCity, String locationState, int locationZipCode) {
+        this.locationId = locationId;
+        this.locationAddress = locationAddress;
+        this.locationCity = locationCity;
+        this.locationState = locationState;
+        this.locationZipCode = locationZipCode;
+    }
+
     public int getLocationId() {
         return locationId;
     }
