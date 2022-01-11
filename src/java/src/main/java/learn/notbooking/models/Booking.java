@@ -1,44 +1,44 @@
-package learn.notbooking.models;
+        package learn.notbooking.models;
 
-public class Booking {
-    private int bookingId;
-    private int packageId;
-    private int customerId;
-    private int numOfGuest;
+        public class Booking {
+            private int bookingId;
+            private int packageId;
+            private int customerId;
+            private int numOfGuest;
+            private Customer customer;
+            public Booking() {
+            }
 
-    public Booking() {
-    }
+            public Booking(int bookingId, int packageId, int customerId, int numOfGuest) {
+                this.bookingId = bookingId;
+                this.packageId = packageId;
+                this.customerId = customerId;
+                this.numOfGuest = numOfGuest;
+            }
 
-    public Booking(int bookingId, int packageId, int customerId, int numOfGuest) {
-        this.bookingId = bookingId;
-        this.packageId = packageId;
-        this.customerId = customerId;
-        this.numOfGuest = numOfGuest;
-    }
+            public int getBookingId() { return bookingId;}
 
-    public int getBookingId() { return bookingId;}
+            public void setBookingId(int bookingId) {
+                this.bookingId = bookingId;
+            }
 
-    public void setBookingId(int bookingId) {
-        this.bookingId = bookingId;
-    }
+            public int getPackageId() {
+                return packageId;
+            }
 
-    public int getPackageId() {
-        return packageId;
-    }
+            public void setPackageId(int packageId) {
+                this.packageId = packageId;
+            }
 
-    public void setPackageId(int packageId) {
-        this.packageId = packageId;
-    }
+            public int getCustomerId() {
+                return customerId;
+            }
 
-    public int getCustomerId() {
-        return customerId;
-    }
+            public void setCustomerId(int customerId) {
+                this.customerId = customerId;
+            }
 
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
-    }
+            public int getNumOfGuest() { return numOfGuest; }
 
-    public int getNumOfGuest() { return numOfGuest; }
-
-    public void setNumOfGuest(int numOfGuest) { this.numOfGuest = numOfGuest; }
-}
+            public void setNumOfGuest(int numOfGuest) { this.numOfGuest = numOfGuest; }
+        }

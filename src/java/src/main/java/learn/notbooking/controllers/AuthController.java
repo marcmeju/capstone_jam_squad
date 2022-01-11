@@ -13,7 +13,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.*;
 
-//import javax.validation.ValidationException;
+import javax.validation.ValidationException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -58,27 +58,27 @@ public class AuthController {
         return new ResponseEntity<>(HttpStatus.FORBIDDEN);
     }
 
-//    @PostMapping("/create_account")
-//    public ResponseEntity<?> createAccount(@RequestBody Map<String, String> credentials) {
-//        AppUser appUser = null;
-//
-//        try {
-//            String username = credentials.get("username");
-//            String password = credentials.get("password");
-//
-//            appUser = appUserService.create(username, password);
-//        } catch (ValidationException ex) {
-//            return new ResponseEntity<>(List.of(ex.getMessage()), HttpStatus.BAD_REQUEST);
-//        } catch (DuplicateKeyException ex) {
-//            return new ResponseEntity<>(List.of("The provided username already exists"), HttpStatus.BAD_REQUEST);
-//        }
-//
-//        // happy path...
-//
-//        HashMap<String, Integer> map = new HashMap<>();
-//        map.put("appUserId", appUser.getAppUserId());
-//
-//        return new ResponseEntity<>(map, HttpStatus.CREATED);
-//    }
+    @PostMapping("/create_account")
+    public ResponseEntity<?> createAccount(@RequestBody Map<String, String> credentials, int userRoleId) {
+        AppUser appUser = null;
+
+        try {
+            String username = credentials.get("username");
+            String password = credentials.get("password");
+
+            appUser = appUserService.create(username, password,userRoleId);
+        } catch (ValidationException ex) {
+            return new ResponseEntity<>(List.of(ex.getMessage()), HttpStatus.BAD_REQUEST);
+        } catch (DuplicateKeyException ex) {
+            return new ResponseEntity<>(List.of("The provided username already exists"), HttpStatus.BAD_REQUEST);
+        }
+
+        // happy path...
+
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("appUserId", appUser.getUserId());
+
+        return new ResponseEntity<>(map, HttpStatus.CREATED);
+    }
 
 }

@@ -36,9 +36,6 @@ public class AppUser extends User {
 
     public AppUser(int userId, String userName, String passwordHash,  int userRoleId, boolean disabled,  List<String> roles) {
 
-        //boolean disabled,
-//        List<String> roleId = new List<>(userRoleId);
-//       roles = convertIdToRoles(userRoleId);
         super(userName, passwordHash, !disabled,
                 true, true, true,
                 convertRolesToAuthorities(roles));
@@ -102,10 +99,16 @@ public class AppUser extends User {
 
     private List<String> convertIdToRoles(int userRoleId){
         if( userRoleId == 1){
-            return  roles = List.of("Admin");
+            return  roles = List.of("guest");
             }
         if( userRoleId == 2){
-            return  roles = List.of("User");
+            return  roles = List.of("member");
+        }
+        if( userRoleId == 3){
+            return  roles = List.of("vip");
+        }
+        if( userRoleId == 4){
+            return  roles = List.of("admin");
         }
         return List.of("Invalid user type");
 
