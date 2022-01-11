@@ -181,5 +181,3 @@ select event_date, DATE_ADD(event_date, INTERVAL 3 MONTH) from not_booking.Event
 UPDATE not_booking.Event  set event_date = DATE_ADD(event_date, INTERVAL 6 MONTH) where event_id<>-1;
 
 select * from not_booking.Event;
-
-delete from not_booking.Location where location_id = 1;

@@ -123,6 +123,7 @@ CREATE TABLE IF NOT EXISTS `not_booking`.`user` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `user_name` VARCHAR(45) NULL,
   `password_hash` VARCHAR(100) NULL,
+  `disabled` boolean not null default(0),
   `user_role_id` INT NULL,
   PRIMARY KEY (`user_id`),
   INDEX `user_role_id_idx` (`user_role_id` ASC) VISIBLE,
