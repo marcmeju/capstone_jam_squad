@@ -1,8 +1,7 @@
 import { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import AuthContext from '../AuthContext';
-
-import Errors from `../Errors`
+import AuthContext from './AuthContext';
+import Errors from '../Errors'
 
 function Register() {
   const [username, setUsername] = useState('');

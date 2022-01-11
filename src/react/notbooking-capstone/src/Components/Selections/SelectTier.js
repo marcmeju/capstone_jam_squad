@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 function SelectTier(){
     
     const {location} = useParams();
-<<<<<<< HEAD
     const [tiers,setTiers] = useState([])
 
     useEffect(()=>{
@@ -49,15 +48,6 @@ function SelectTier(){
 
     
     {/* <Link to={`/${location}/${1}`}>
-=======
-
-    console.log(`/${location}/${1}`);
-    
-    return(
-    <>
-    <p>Which Tier would you like to select from {location}</p>
-    <Link to={`/package/${location}/${1}`}>
->>>>>>> 9dbf6649a915b12c07a3a608fb7b7013f30920e1
     <p>Package 1: Choose from packages with 2 days 4 events</p>
     </Link>
     <Link to={`/package/${location}/${2}`}>

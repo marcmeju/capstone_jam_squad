@@ -13,10 +13,7 @@ function NavBar(){
                <li><Link to ="/">Home</Link></li>
                <li><Link to ="/about">About</Link></li>
                <li><Link to ="/contact">Contact</Link></li>
-                
-               <li><Link to ="/events/view">View Events</Link></li>       
-               <li><Link to ="/packages/view">View Packages</Link></li>
-           
+            
                {!auth.user && (
                 <>
                     <li><Link to="/login">Login</Link></li>

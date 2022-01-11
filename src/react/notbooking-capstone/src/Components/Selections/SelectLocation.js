@@ -24,7 +24,6 @@ function SelectLocation(){
     return( distinct && 
         // look at examples of dynamic routing to account for each scenario
         <>
-<<<<<<< HEAD
             <div>
                 <table>
                     <thead>
@@ -43,11 +42,6 @@ function SelectLocation(){
 
                 </table>
             </div>
-=======
-        <p><Link to={`/tier/${"nyc"}`} >NYC</Link></p>
-        <p><Link to={`/tier/${"chicago"}`}  >Chicago</Link></p>
-        <p><Link to={`/tier/${"la"}`}  >Los Angeles</Link></p>
->>>>>>> 9dbf6649a915b12c07a3a608fb7b7013f30920e1
         </>
                 
     )
