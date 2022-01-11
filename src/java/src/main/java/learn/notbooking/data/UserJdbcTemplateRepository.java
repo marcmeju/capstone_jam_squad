@@ -79,7 +79,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
     }
 
     @Transactional
-    public void update(AppUser user) {
+    public boolean update(AppUser user) {
 
         final String sql = "update user set "
                 + "user_name = ?, "
@@ -90,6 +90,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
                 user.getUsername(), !user.isEnabled(), user.getUserId());
 
         updateRoles(user);
+        return false;
     }
 
     private void updateRoles(AppUser user) {
