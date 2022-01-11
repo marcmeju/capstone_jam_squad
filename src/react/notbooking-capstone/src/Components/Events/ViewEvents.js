@@ -1,79 +1,84 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useState,useEffect } from "react";
 
 function ViewEvents(){
 
     const [eventId] = useState(0);
+    const { location, tierId, packageId} = useParams();
     // const [eventType,setEventType] = useState("");
     // const [eventName,setEventName] = useState("");
     // const [eventDate,setEventDate] = useState("");
     // const [eventPrice,setEventPrice] = useState("");
     // const [locationId,setLocationId] = useState("");
     // const [contactId,setContactId] = useState("");
+    const [packageNameField, setPackageNameField] = useState("");
+    const [events,setEvents] = useState([]);
+    const [evnt,setEvent] = useState({});
+   // const [packageId, setPackageId] = useState(props.packageId);
+    const [eventList, setEventList] = useState([]);
 
-    const [events,setEvents] = useState([])
-    const [evnt,setEvent] = useState({})
-
-    //setEvent(events.filter.eventId)
-
-
+  //  console.log("this is package id", props.packageId);
     useEffect(() =>{
         const getData = async () => {
             try{
-                const response = await fetch("http://localhost:8080/api/notBooking/events");
+                const response = await fetch(`http://localhost:8080/package/${packageId}/details`);
                 const data = await response.json();
-                setEvents(data);
+                setEventList(data);
+                setPackageNameField([...new Set(data.map(x =>x.packageName))][0]);
+                console.log("this is view event data", data)
             }catch(error){
                 console.log(error);
             };
         }
         getData();
-    });
+    }, [packageId]);
 
+    function uniquePackageName(){
+
+    }
+   
     return(
         <div>
-            <Link to="/events/add" className="btn btn-primary btn-sm">Add Events</Link>
-            <table className="table table-striped table-dark table-hover">
-                <thead>
-                    <tr>
-                        <th id="eventId">Event Id:</th>
-                        <th id="eventType">Event Type: </th>
-                        <th id="eventName">Event Name:</th>
-                        <th id="eventDate">Event Date:</th>
-                        <th id="eventPrice">Event Price:</th>
-                        <th id="locationId">Location:</th>
-                        <th id="contactId">Contact:</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
+            <p></p>
+             <tr><th scope="col">Package Name:</th> <th scope="col">{packageNameField}</th></tr>
+             <p></p>
+            <table className = "Event table">
+         <thead>
+            
+             <tr>
+                
+                 <th scope="col">Event Name</th>
+                 <th scope="col">Event Date </th>
+                 <th scope="col">City</th>
+                 <th scope="col">State</th>
+                 <th scope="col">Email</th>
+                 <th scope="col">Phone</th>
+                
+               
+               </tr>
+         </thead>
+         
+         <tbody>
+             {eventList.map((events)=>(
+                <tr>
+                 <td> {events.eventName}</td>
+                 <td> {events.eventDate}</td>
+                 <td> {events.locationCity}</td>
+                 <td> {events.locationState}</td>
+                 <td> {events.contactEmail}</td>
+                 <td> {events.contactPhone}</td>
+        
+                 </tr>
+            ))}
+         </tbody>
+     </table>
+     <Link to={`/booking/cart/${packageId}`} >
+        <button >Book Package</button>
+                  </Link>
+                
+                  <Link to={`/package/${location}/${tierId}`} ><button > Go Back</button>
+                  </Link>
 
-                <tbody>
-                    {events.map((evnt) => (
-                    <tr key={eventId}>
-                        <td>{evnt.eventId}</td>
-                        <td>{evnt.eventType}</td>
-                        <td>{evnt.eventName}</td>
-                        <td>{evnt.setEventDate}</td>
-                        <td>{evnt.eventPrice}</td>
-                        <td>{evnt.locationId}</td>
-                        <td>{evnt.contactId}</td>
-                        <td>
-                            <div className="float-right">
-                                <Link to={`/events/edit/${evnt.eventId}`} className="btn btn-primary btn-sm">
-                                    Edit
-                                </Link>
-
-                                <Link to={`/events/delete/${evnt.eventId}`} className="btn btn-danger btn-sm ml-2">
-                                    Delete
-                                </Link>
-                                
-                            </div>
-                        </td>
-                    </tr>
-                    ))}
-                </tbody>
-            </table>
         </div>
     )
 }

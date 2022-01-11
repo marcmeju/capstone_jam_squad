@@ -83,7 +83,7 @@ function App(){
                     <Route path ="/packages/view" >   <ViewPackage/>   </Route>
                     <Route path ="/packages/add" >   <AddPackage/>   </Route>
 
-                    <Route path={`/tier/:location`}>   <SelectTier/>   </Route>
+                    <Route path={`/city/:location`}>   <SelectTier/>   </Route>
                     <Route path={`/package/:location/:tierId`}></Route>
 
                     <Route path = "/login">   <Login />   </Route>
