@@ -1,8 +1,7 @@
 package learn.notbooking.data;
 
 import learn.notbooking.data.Mappers.UserMapper;
-import learn.notbooking.data.Mappers.UserMapper;
-import learn.notbooking.models.User;
+import learn.notbooking.models.AppUser;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -21,7 +20,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
     }
 
     @Override
-    public List<User> findAll() {
+    public List<AppUser> findAll() {
         final String sql = "select * "
                 + "from user ;";
 
@@ -29,7 +28,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
     }
 
     @Override
-    public User findById(int userId) {
+    public AppUser findById(int userId) {
         final String sql = "select * "
                 + "from user "
                 + "where user_id = ?;";
@@ -40,7 +39,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
     }
 
     @Override
-    public User add(User user) {
+    public AppUser add(AppUser user) {
         final String sql = "insert into user (user_name, password_hash, user_role_id) values (?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
@@ -59,7 +58,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
     }
 
     @Override
-    public boolean update(User user) {
+    public boolean update(AppUser user) {
         final String sql = "update user set user_name = ?, password_hash = ?, user_role_id = ? where user_id = ?;";
 
         int rowsUpdated = jdbcTemplate.update(sql,
@@ -72,5 +71,18 @@ public class UserJdbcTemplateRepository implements UserRepository{
     public boolean deleteById(int userId) {
         final String sql = "delete from user where user_id = ?;";
         return jdbcTemplate.update(sql, userId) > 0;
+    }
+
+
+    private int convertRolesToId(List<String> roles){
+        for(String r : roles){
+            if(r.equalsIgnoreCase("admin")){
+                return 1;
+            }
+            if(r.equalsIgnoreCase("user")){
+                return 2;
+            }
+        }
+        return 0;
     }
 }

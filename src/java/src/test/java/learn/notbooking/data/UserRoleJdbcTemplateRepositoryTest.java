@@ -28,10 +28,7 @@ class UserRoleJdbcTemplateRepositoryTest {
     @Test
     void findAll() {
         List<UserRole> all = repository.findAll();
-
-        assertNotNull(all);
-        // Anything 2 or bigger is good since pets are being added and deleted.
-        assertTrue(all.size() >= 1);
+        assertNotNull(all);   assertTrue(all.size() >= 1);
     }
 
     @Test
@@ -45,7 +42,7 @@ class UserRoleJdbcTemplateRepositoryTest {
         actual = repository.findById(2);
         assertEquals(user, actual);
 
-        actual = repository.findById(3);
+        actual = repository.findById(5000);
         assertEquals(null, actual);
     }
 

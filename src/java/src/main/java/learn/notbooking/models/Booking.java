@@ -6,6 +6,16 @@ public class Booking {
     private int customerId;
     private int numOfGuest;
 
+    public Booking() {
+    }
+
+    public Booking(int bookingId, int packageId, int customerId, int numOfGuest) {
+        this.bookingId = bookingId;
+        this.packageId = packageId;
+        this.customerId = customerId;
+        this.numOfGuest = numOfGuest;
+    }
+
     public int getBookingId() { return bookingId;}
 
     public void setBookingId(int bookingId) {

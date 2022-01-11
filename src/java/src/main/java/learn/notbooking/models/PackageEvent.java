@@ -5,6 +5,15 @@ public class PackageEvent {
     private int eventId;
     private int packageId;
 
+    public PackageEvent() {
+    }
+
+    public PackageEvent(int packageEventId, int eventId, int packageId) {
+        this.packageEventId = packageEventId;
+        this.eventId = eventId;
+        this.packageId = packageId;
+    }
+
     public Event getEvent() {
         return event;
     }

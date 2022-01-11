@@ -9,6 +9,19 @@ public class Event {
     private int locationId;
     private int contactId;
 
+    public Event() {
+    }
+
+    public Event(int eventId, String eventType, String eventName, String eventDate, int eventPrice, int locationId, int contactId) {
+        this.eventId = eventId;
+        this.eventType = eventType;
+        this.eventName = eventName;
+        this.eventDate = eventDate;
+        this.eventPrice = eventPrice;
+        this.locationId = locationId;
+        this.contactId = contactId;
+    }
+
     public int getEventId() {
         return eventId;
     }

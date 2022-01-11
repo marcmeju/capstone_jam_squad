@@ -4,7 +4,7 @@ package learn.notbooking.controllers;
 import learn.notbooking.domain.Result;
 import learn.notbooking.domain.ResultType;
 import learn.notbooking.domain.UserService;
-import learn.notbooking.models.User;
+import learn.notbooking.models.AppUser;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,15 +23,15 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> findAll() {
+    public List<AppUser> findAll() {
 
         return service.findAll();
 
     }
 
     @GetMapping("/{userId}")
-    public ResponseEntity<User> findById(@PathVariable int userId) {
-        User user = service.findById(userId);
+    public ResponseEntity<AppUser> findById(@PathVariable int userId) {
+        AppUser user = service.findById(userId);
         try{
             if (user == null) {
                 return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
@@ -43,8 +43,8 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<User> add(@RequestBody User user) {
-        Result<User> result = service.add(user);
+    public ResponseEntity<AppUser> add(@RequestBody AppUser user) {
+        Result<AppUser> result = service.add(user);
         if (result.getType() == ResultType.INVALID) {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
@@ -52,7 +52,7 @@ public class UserController {
     }
 
     @PutMapping("/{userId}")
-    public ResponseEntity<Void> update(@PathVariable int userId, @RequestBody User user) {
+    public ResponseEntity<Void> update(@PathVariable int userId, @RequestBody AppUser user) {
 
         // id conflict. stop immediately.
         if (userId != user.getUserId()) {
@@ -61,7 +61,7 @@ public class UserController {
 
         // 4. ResultType -> HttpStatus
         try {
-            Result<User> result = service.update(user);
+            Result<AppUser> result = service.update(user);
             if (result.getType() == ResultType.INVALID) {
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             } else if (result.getType() == ResultType.NOT_FOUND) {

@@ -2,7 +2,6 @@ package learn.notbooking.data;
 
 import learn.notbooking.data.Mappers.UserMapper;
 import learn.notbooking.data.Mappers.UserRoleMapper;
-import learn.notbooking.models.User;
 import learn.notbooking.models.UserRole;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
