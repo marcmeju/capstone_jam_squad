@@ -28,19 +28,19 @@ public class AppUserService implements UserDetailsService {
         AppUser appUser = repository.findByUsername(username);
 
         if(appUser == null || !appUser.isEnabled()){
-            throw new UsernameNotFoundException(username+" not found");
+            throw new UsernameNotFoundException(username+" not found" + appUser.isEnabled() + appUser);
         }
 
         return appUser;
     }
 
-    public AppUser create(String username, String password,int userRoleId){
+    public AppUser create(String username, String password, int userRoleId){
         validate(username);
         validatePassword(password);
-
+        //int userRoleId = 2;
         password = encoder.encode(password);
 
-        AppUser appUser = new AppUser(0,username,password,userRoleId,false,List.of("User"));
+        AppUser appUser = new AppUser(0,username,password,userRoleId,false);
 
         return repository.create(appUser);
     }

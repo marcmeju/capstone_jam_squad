@@ -45,7 +45,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
     public AppUser findByUsername(String username) {
         List<String> roles = getRolesByUsername(username);
 
-        final String sql = "select user_id, user_name, password_hash, disabled "
+        final String sql = "select user_id, user_name, password_hash, disabled, user_role_id "
                 + "from user "
                 + "where user_name = ?;";
 
@@ -57,13 +57,15 @@ public class UserJdbcTemplateRepository implements UserRepository{
     @Transactional
     public AppUser create(AppUser user) {
 
-        final String sql = "insert into user (user_name, password_hash) values (?, ?);";
+        final String sql = "insert into user (user_name, password_hash, disabled, user_role_id) values (?, ?, ?, ?);";
 
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, user.getUsername());
             ps.setString(2, user.getPassword());
+            ps.setBoolean(3, false);
+            ps.setInt(4, user.getUserRoleId());
             return ps;
         }, keyHolder);
 
@@ -73,7 +75,7 @@ public class UserJdbcTemplateRepository implements UserRepository{
 
         user.setUserId(keyHolder.getKey().intValue());
 
-        updateRoles(user);
+        //updateRoles(user);
 
         return user;
     }
@@ -89,13 +91,13 @@ public class UserJdbcTemplateRepository implements UserRepository{
         jdbcTemplate.update(sql,
                 user.getUsername(), !user.isEnabled(), user.getUserId());
 
-        updateRoles(user);
+        //updateRoles(user);
         return false;
     }
 
     private void updateRoles(AppUser user) {
         // delete all roles, then re-add
-        jdbcTemplate.update("delete from user_role where user_id = ?;", user.getUserId());
+        jdbcTemplate.update("delete from user where user_id = ?;", user.getUserId());
 
         Collection<GrantedAuthority> authorities = user.getAuthorities();
 
@@ -114,9 +116,9 @@ public class UserJdbcTemplateRepository implements UserRepository{
         final String sql = "select r.role_name "
                 + "from user_role ur "
                 + "inner join user_role r on ur.user_role_id = r.user_role_id "
-                + "inner join user au on ur.user_id = au.user_id "
+                + "inner join user au on ur.user_role_id = au.user_role_id "
                 + "where au.user_name = ?";
-        return jdbcTemplate.query(sql, (rs, rowId) -> rs.getString("name"), username);
+        return jdbcTemplate.query(sql, (rs, rowId) -> rs.getString("role_name"), username);
     }
 
     @Override

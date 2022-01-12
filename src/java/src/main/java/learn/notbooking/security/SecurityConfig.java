@@ -25,13 +25,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         //needed when not using html forms so I was unsure
-//        http.csrf().disable();
+        http.csrf().disable();
         http.cors();
 
         //write proper urls, being able to add where needed
         http.authorizeRequests()
-                .antMatchers("/api/authenticate").permitAll()
-                .antMatchers("/api/create_account").permitAll()
+                .antMatchers("/authenticate").permitAll()
+                .antMatchers("/create_account").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/booking").permitAll()
                 .antMatchers(HttpMethod.GET,
@@ -132,20 +132,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PasswordEncoder encoder;
 // Takeout later
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-        var userBuilder = User.withUsername("user")
-                .password("user").passwordEncoder(password -> encoder.encode(password))
-                .roles("USER");
+//    @Override
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception{
+//        var userBuilder = User.withUsername("user")
+//                .password("user").passwordEncoder(password -> encoder.encode(password))
+//                .roles("USER");
+//
+//        var adminBuilder = User.withUsername("admin")
+//                .password("admin").passwordEncoder(password -> encoder.encode(password))
+//                .roles("ADMIN");
+//
+//        auth.inMemoryAuthentication()
+//                .withUser(userBuilder)
+//                .withUser(adminBuilder);
+//    }
 
-        var adminBuilder = User.withUsername("admin")
-                .password("admin").passwordEncoder(password -> encoder.encode(password))
-                .roles("ADMIN");
 
-        auth.inMemoryAuthentication()
-                .withUser(userBuilder)
-                .withUser(adminBuilder);
-    }
 
     @Override
     @Bean

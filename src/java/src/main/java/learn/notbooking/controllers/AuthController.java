@@ -11,6 +11,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.ValidationException;
@@ -20,7 +21,7 @@ import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:3000"})
-//@RequestMapping("api")
+@RequestMapping("")
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
@@ -35,9 +36,12 @@ public class AuthController {
 
     @PostMapping("/authenticate")
     public ResponseEntity<Map<String, String>> authenticate(@RequestBody Map<String, String> credentials) {
+        String username = credentials.get("username");
+        String password =  credentials.get("password");
+        UserDetails userDetails = appUserService.loadUserByUsername(username);
 
         UsernamePasswordAuthenticationToken authToken =
-                new UsernamePasswordAuthenticationToken(credentials.get("username"), credentials.get("password"));
+                new UsernamePasswordAuthenticationToken(credentials.get("username"), credentials.get("password"), userDetails.getAuthorities());
 
         try {
             Authentication authentication = authenticationManager.authenticate(authToken);
@@ -59,14 +63,15 @@ public class AuthController {
     }
 
     @PostMapping("/create_account")
-    public ResponseEntity<?> createAccount(@RequestBody Map<String, String> credentials, int userRoleId) {
+    public ResponseEntity<?> createAccount(@RequestBody Map<String, String> credentials) {
         AppUser appUser = null;
 
         try {
             String username = credentials.get("username");
-            String password = credentials.get("password");
+            String password =  credentials.get("password");
+            int userRoleId = Integer.parseInt(credentials.get("roleid"));
 
-            appUser = appUserService.create(username, password,userRoleId);
+            appUser = appUserService.create(username, password, userRoleId);
         } catch (ValidationException ex) {
             return new ResponseEntity<>(List.of(ex.getMessage()), HttpStatus.BAD_REQUEST);
         } catch (DuplicateKeyException ex) {

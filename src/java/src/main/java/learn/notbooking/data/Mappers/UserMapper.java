@@ -24,8 +24,7 @@ public class UserMapper implements RowMapper<AppUser> {
                 , resultSet.getString("user_name")
                 , resultSet.getString("password_hash")
                 ,resultSet.getInt("user_role_id")
-                ,resultSet.getBoolean("disabled")
-                ,convertIdToRoles(resultSet.getInt("user_role_id")));
+                ,resultSet.getBoolean("disabled"));
 
     }
 

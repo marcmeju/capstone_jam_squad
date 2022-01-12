@@ -34,11 +34,11 @@ public class AppUser extends User {
 //        this.userRoleId = userRoleId;
 //    }
 
-    public AppUser(int userId, String userName, String passwordHash,  int userRoleId, boolean disabled,  List<String> roles) {
+    public AppUser(int userId, String userName, String passwordHash,  int userRoleId, boolean disabled) {
 
         super(userName, passwordHash, !disabled,
                 true, true, true,
-                convertRolesToAuthorities(roles));
+                convertRolesToAuthorities(AppUser.convertIdToRoles(userRoleId)));
 
         this.userId = userId;
         this.userName = userName;
@@ -97,18 +97,18 @@ public class AppUser extends User {
                 .collect(Collectors.toList());
     }
 
-    private List<String> convertIdToRoles(int userRoleId){
+    private static List<String> convertIdToRoles(int userRoleId){
         if( userRoleId == 1){
-            return  roles = List.of("guest");
+            return   List.of("guest");
             }
         if( userRoleId == 2){
-            return  roles = List.of("member");
+            return  List.of("member");
         }
         if( userRoleId == 3){
-            return  roles = List.of("vip");
+            return   List.of("vip");
         }
         if( userRoleId == 4){
-            return  roles = List.of("admin");
+            return   List.of("admin");
         }
         return List.of("Invalid user type");
 
