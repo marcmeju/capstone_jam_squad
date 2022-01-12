@@ -2,6 +2,7 @@ package learn.notbooking.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -12,6 +13,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -56,6 +58,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/package").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/package/*").permitAll()
+                .antMatchers(HttpMethod.GET,
+                        "/package/*/details").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/tier/*").permitAll()
                 .antMatchers(HttpMethod.GET,
@@ -131,6 +135,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private PasswordEncoder encoder;
+
+    @Bean
+    @Lazy
+    public HandlerMappingIntrospector mvcHandlerMappingIntrospector() {
+        return new HandlerMappingIntrospector();
+    }
 // Takeout later
 //    @Override
 //    protected void configure(AuthenticationManagerBuilder auth) throws Exception{
