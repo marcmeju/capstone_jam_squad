@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import Errors from '../Errors';
+import AuthContext from "../Security/AuthContext";
+const TOKEN_KEY = "user-api-token"
 
 function EditBooking(props){
 
@@ -12,6 +14,10 @@ function EditBooking(props){
     const [showSuccessMessage, setShowSuccessMessage] = useState(true)
     const [showFailedMessage, setShowFailedMessage] = useState(true)
     const [bookingId, setBookingId] = useState(0)
+
+    const auth = useContext(AuthContext)
+    const token = localStorage.getItem(TOKEN_KEY);
+    console.log("This is the edit cart page",token);
 
     useEffect(() =>{
         const getData = async () => {
@@ -36,13 +42,14 @@ function EditBooking(props){
 
     function confirmBooking(){
 
-        const newBooking = {packageId:props.packageId, customerId:1, numOfGuest:numOfGuests};
+        const newBooking = {packageId:props.packageId, customerId:auth.user.customerId, numOfGuest:numOfGuests};
         console.log("This is the booking object", newBooking)
 
         const init = {
             method: 'POST', // GET by default
             headers: {
               'Content-Type': 'application/json',
+              'Authorization': 'Bearer '+token
             },
             body: JSON.stringify(newBooking)
           };

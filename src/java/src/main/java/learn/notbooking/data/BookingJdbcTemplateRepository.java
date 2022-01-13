@@ -42,15 +42,13 @@ public class BookingJdbcTemplateRepository implements BookingRepository{
     }
 
     @Override
-    public Booking findBookingByCustomerId(int customerId) {
+    public List<Booking> findBookingByCustomerId(int customerId) {
 
         final String sql = "select * "
                 + "from Booking "
                 + "where customer_id = ?;";
 
-        return jdbcTemplate.query(sql, new BookingMapper(), customerId)
-                .stream()
-                .findFirst().orElse(null);
+        return jdbcTemplate.query(sql, new BookingMapper(), customerId);
     }
     @Override
     public Booking add(Booking booking) {

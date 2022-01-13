@@ -88,6 +88,8 @@ function Packages(){
             ))}
          </tbody>
      </table>
+     <Link to={`/city/${location}`} ><button > Go Back</button>
+                  </Link>
      </div>
 
      {/* <div hidden={displayEvent}>
@@ -97,9 +99,7 @@ function Packages(){
        
     
 
-     <div hidden={!vipPackage}>
-         <VipPackage/>
-     </div>
+     
      </div>); 
 }
 

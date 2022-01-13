@@ -20,7 +20,8 @@ function AddBooking(){
     //use number of guests to calculate price
 
     return(
-
+<>
+</>
     )
 }
 

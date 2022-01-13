@@ -23,7 +23,7 @@ public class BookingService {
         return repository.findAll();
     }
 
-    public Booking findBookingByCustomerId(int customerId){
+    public List<Booking> findBookingByCustomerId(int customerId){
         return repository.findBookingByCustomerId(customerId);
     }
 

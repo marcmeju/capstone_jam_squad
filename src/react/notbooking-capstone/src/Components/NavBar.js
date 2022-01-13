@@ -3,6 +3,7 @@ import jwtDecode from "jwt-decode";
 import {Link} from "react-router-dom"
 import AuthContext from "./Security/AuthContext";
 
+
 function NavBar(){
 
     const auth = useContext(AuthContext)
@@ -23,8 +24,9 @@ function NavBar(){
            
         {auth.user && (
             <div>
-            <p>Hello {auth.user.username}!</p>
-            <button onClick={() => auth.logout()} >Logout</button>
+            <p>Hello {auth.user.firstName}!</p>
+            <li><button onClick={() => auth.logout()} >Logout</button></li>
+               <li><Link to ="/booking/list">My Bookings</Link></li>
             </div>
         )}
        </nav>

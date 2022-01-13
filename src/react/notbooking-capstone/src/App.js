@@ -18,6 +18,7 @@ import Packages from "./Components/Packages/Packages"
 import AuthContext from "./Components/Security/AuthContext"
 import ViewBooking from "./Components/Booking/ViewCart"
 import DeleteBooking from "./Components/Booking/DeleteFromCart"
+import BookingList from "./Components/Booking/BookingList"
 
 const TOKEN_KEY = "user-api-token"
 
@@ -29,26 +30,52 @@ function App(){
 
     useEffect(()=>{
       const token = localStorage.getItem(TOKEN_KEY);
+      console.log("User invoked", token);
 
-      if(token){login(token)}
+      if(token)
+      {
+        //findByUser(token)
+        login(token)
+        
+      
+      }
       
       setInitialized(true);
     },[])
 
-    const findByUser = ()=>( user ? async() =>{
-      try{
-        const response = await fetch(`http:localhost:8080/customer/find/${user.username}`) 
-        const data = await response.json();
-        setCustomer({data});
-      }catch(error){console.log(error)}
-      console.log(customer)
-      return customer;
-    } : null);
+    // function findByUser(token){
+    //   console.log("Entering with token");
+    //   const {id,sub:username,roles:userRoles} = jwt_decode(token);
+    //   fetch(`http:localhost:8080/customer/find/${username}`)
+    //   .then(response => response.json())
+    //   .then(data => setCustomer(data))
+    //   .catch(error => console.log(error))
+    //   console.log(customer)
+    // } ;
 
 
     const login = (token) =>{
+      console.log("This is inside log: ", token)
       const {id,sub:username,roles:userRoles} = jwt_decode(token);
+      localStorage.setItem(TOKEN_KEY, token);
 
+
+      //let customerVal = {}
+      let customerId=0;
+      let firstName="";
+      let lastName="";
+
+      fetch(`http://localhost:8080/customer/find/${username}`)
+      .then((response) => {return response.json()})
+      .then((data) => {
+        customerId =  data["customerId"]
+        firstName = data["customerFirstName"]
+        lastName = data["customerLastName"]
+        //console.log("Finally data is ", customerId, firstName, lastName)
+      
+
+      //const {customerId, firstName, lastName} = {customerVal, customerVal.customerFirstName, customerVal.customerLastName }
+      //console.log("Customer Val ==> ", customerVal);
       const roles = userRoles?.split(",");
       
       const user = {
@@ -56,13 +83,22 @@ function App(){
         username,
         roles,
         token,
+        customerId, 
+        firstName, 
+        lastName,
         hasRole(role){
           return this.roles.includes(role);
         },
       }
-      console.log(user);
+     // console.log(user);
       setUser(user);
-      findByUser();
+      //findByUser();
+    
+    })
+      .catch(error => console.log(error))
+      //console.log(customerVal)
+
+      
       
       return user;
     };
@@ -104,6 +140,7 @@ function App(){
                     
                     <Route path = {`/booking/cart/:packageId`}> {user? <ViewBooking/> : <Redirect to ="/login"/> } </Route>
                     <Route path = {`/booking/delete`}><DeleteBooking/></Route>
+                    <Route path = {`/booking/list`}><BookingList/></Route>
 
                     <Route path = "/login">   <Login />   </Route>
                     <Route path = "/register">   <Register />   </Route>

@@ -43,8 +43,8 @@
         }
 
         @GetMapping("/customer/{customerId}")
-        public ResponseEntity<Booking> findBookingByCustomerId(@PathVariable int customerId) {
-            Booking booking = service.findBookingByCustomerId(customerId);
+        public ResponseEntity<List<Booking>> findBookingByCustomerId(@PathVariable int customerId) {
+            List<Booking> booking = service.findBookingByCustomerId(customerId);
             try{
                 if (booking == null) {
                     return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);

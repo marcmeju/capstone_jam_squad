@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import EditBooking from "./EditCart";
+
+
 
 function ViewBooking(){
 
@@ -11,7 +13,9 @@ function ViewBooking(){
     const [bookingStartDate, setBookingStartDate] = useState("2020-02-02");
     const [bookingEndDate, setBookingEndDate] = useState("");
     const [showTable, setShowTable] = useState(true);
-    const [location, setLocation] = useState("")
+    const [location, setLocation] = useState("");
+
+    
 
 
 

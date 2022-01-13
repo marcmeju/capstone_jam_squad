@@ -39,6 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET,
                         "/booking/*").permitAll()
                 .antMatchers(HttpMethod.GET,
+                        "/booking/customer/*").permitAll()
+                .antMatchers(HttpMethod.GET,
                         "/contact").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/contact/*").permitAll()
@@ -75,11 +77,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET,
                         "/userRole/*").permitAll()
                 .antMatchers(HttpMethod.POST,
-                        "/booking").hasAnyRole("USER","ADMIN")
+                        "/booking").permitAll()
                 .antMatchers(HttpMethod.POST,
-                        "/contact").hasAnyRole("USER","ADMIN")
+                        "/contact").permitAll()
                 .antMatchers(HttpMethod.POST,
-                        "/customer").hasAnyRole("USER","ADMIN")
+                        "/customer").permitAll()
                 .antMatchers(HttpMethod.POST,
                         "/event").hasAnyRole("USER","ADMIN")
                 .antMatchers(HttpMethod.POST,
@@ -111,7 +113,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.PUT,
                         "/userRole/*").hasAnyRole("USER","ADMIN")
                 .antMatchers(HttpMethod.DELETE,
-                        "/booking/*").hasAnyRole("ADMIN")
+                        "/booking/*").permitAll()
                 .antMatchers(HttpMethod.DELETE,
                         "/contact/*").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.DELETE,
