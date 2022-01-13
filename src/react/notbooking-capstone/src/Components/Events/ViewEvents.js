@@ -5,19 +5,13 @@ function ViewEvents(){
 
     const [eventId] = useState(0);
     const { location, tierId, packageId} = useParams();
-    // const [eventType,setEventType] = useState("");
-    // const [eventName,setEventName] = useState("");
-    // const [eventDate,setEventDate] = useState("");
-    // const [eventPrice,setEventPrice] = useState("");
-    // const [locationId,setLocationId] = useState("");
-    // const [contactId,setContactId] = useState("");
+    
     const [packageNameField, setPackageNameField] = useState("");
     const [events,setEvents] = useState([]);
     const [evnt,setEvent] = useState({});
-   // const [packageId, setPackageId] = useState(props.packageId);
+
     const [eventList, setEventList] = useState([]);
 
-  //  console.log("this is package id", props.packageId);
     useEffect(() =>{
         const getData = async () => {
             try{

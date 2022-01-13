@@ -27,7 +27,7 @@ function SelectTier(){
     
         <Link to={`/package/${location}/${3}`}>
     
-        <p>Package 3: Mix your own package for either 2 days 3 events, or 3 days 5 events </p>
+        <p>Package 3: Choose from our VIP packages with 5 days 7 events </p>
     
         </Link>
     

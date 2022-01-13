@@ -17,10 +17,11 @@ function SelectLocation(){
                 <tbody>
         <tr>
             <td>New York Package</td><td><Link to={`/city/${"nyc"}`} ><img src={nyc} alt="nyc" width="600" height="400" /></Link></td>
-            <td>Chicago Package   </td> <td><Link to={`/city/${"chicago"}`}  ><img src={chicago} alt="chicago" width="600" height="400" /></Link></td>
         </tr>
         <td>&nbsp;</td>
         <tr>
+        <td>Chicago Package   </td> <td><Link to={`/city/${"chicago"}`}  ><img src={chicago} alt="chicago" width="600" height="400" /></Link></td>
+
         </tr>
         <tr><td>     &nbsp;     </td></tr>
         <tr><td>Los Angeles Package </td><td ><Link to={`/city/${"la"}`}  ><img src={la} alt="la" width="600" height="400" /></Link></td></tr>

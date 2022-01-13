@@ -2,6 +2,8 @@ import { useContext, useEffect } from "react";
 import jwtDecode from "jwt-decode";
 import {Link} from "react-router-dom"
 import AuthContext from "./Security/AuthContext";
+import notbooking from "./notbookinglogo.jpeg"
+import nyc from "./NYC.jpeg"
 
 
 function NavBar(){
@@ -10,24 +12,26 @@ function NavBar(){
 
    return(
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         
-               <li><Link to ="/">Home</Link></li>
-               <li><Link to ="/about">About</Link></li>
-               <li><Link to ="/contact">Contact</Link></li>
+             <Link to ="/" ><img src={notbooking} width="60" height="60" /></Link>
+        
+               <ul><Link to ="/">Home</Link></ul>
+               <ul><Link to ="/about">About</Link></ul>
+               <ul><Link to ="/contact">Contact</Link></ul>
             
                {!auth.user && (
                 <>
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/register">Register</Link></li>
+                    <ul><Link to="/login">Login</Link></ul>
+                    <ul><Link to="/register">Register</Link></ul>
                 </>
                 )} 
            
         {auth.user && (
             <>
         
-            <li><Link to ="/booking/list">My Bookings</Link></li>
-            <li><button onClick={() => auth.logout()} >Logout</button></li>
-            <p class="text-light bg-dark">Hello {auth.user.firstName}!</p>
+            <ul><Link to ="/booking/list">My&nbsp;Bookings</Link></ul>
+           
+            <p class="text-light bg-dark ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello&nbsp;{auth.user.firstName}! &nbsp;&nbsp;</p>
+            <button onClick={() => auth.logout()} >&nbsp;Logout</button>
             </>
         )}
        </nav>

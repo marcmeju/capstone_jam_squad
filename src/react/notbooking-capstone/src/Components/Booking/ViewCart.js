@@ -55,15 +55,12 @@ function ViewBooking(){
         }
         getData();
     }, [packageId]);
-    console.log("This is package list", packages);
+    
 
     
 
 
-   //console.log([...new Set(eventList.map(x => (x.eventDate.substring(0,10))))])
-   //console.log(new Date(Math.min.apply(null,[...new Set(eventList.map(x => new Date(Date.parse(x.eventDate))))])))
-   //console.log((new Date(Math.max.apply(null,[...new Set(eventList.map(x => new Date(Date.parse(x.eventDate))))]))).toISOString().substring(0, 10))
-
+   
 
     return(
    

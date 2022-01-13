@@ -47,7 +47,7 @@ body {
   }
   
   button {
-    background-color: #9a4ef1;
+    background-color: #459ac2;
      display: inline-block;
      padding: 0.3em 1.2em;
      margin: 0 0.1em 0.1em 0;
@@ -72,4 +72,5 @@ body {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.99);
   }
+  
   

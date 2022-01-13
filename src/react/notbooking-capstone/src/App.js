@@ -34,7 +34,7 @@ function App(){
 
       if(token)
       {
-        //findByUser(token)
+       
         login(token)
         
       
@@ -43,24 +43,14 @@ function App(){
       setInitialized(true);
     },[])
 
-    // function findByUser(token){
-    //   console.log("Entering with token");
-    //   const {id,sub:username,roles:userRoles} = jwt_decode(token);
-    //   fetch(`http:localhost:8080/customer/find/${username}`)
-    //   .then(response => response.json())
-    //   .then(data => setCustomer(data))
-    //   .catch(error => console.log(error))
-    //   console.log(customer)
-    // } ;
+
 
 
     const login = (token) =>{
-      console.log("This is inside log: ", token)
+      
       const {id,sub:username,roles:userRoles} = jwt_decode(token);
       localStorage.setItem(TOKEN_KEY, token);
 
-
-      //let customerVal = {}
       let customerId=0;
       let firstName="";
       let lastName="";
@@ -71,11 +61,7 @@ function App(){
         customerId =  data["customerId"]
         firstName = data["customerFirstName"]
         lastName = data["customerLastName"]
-        //console.log("Finally data is ", customerId, firstName, lastName)
-      
-
-      //const {customerId, firstName, lastName} = {customerVal, customerVal.customerFirstName, customerVal.customerLastName }
-      //console.log("Customer Val ==> ", customerVal);
+        
       const roles = userRoles?.split(",");
       
       const user = {
@@ -90,13 +76,13 @@ function App(){
           return this.roles.includes(role);
         },
       }
-     // console.log(user);
+   
       setUser(user);
-      //findByUser();
+      
     
     })
       .catch(error => console.log(error))
-      //console.log(customerVal)
+      
 
       
       

@@ -46,7 +46,7 @@ function EditBooking(props){
         console.log("This is the booking object", newBooking)
 
         const init = {
-            method: 'POST', // GET by default
+            method: 'POST', 
             headers: {
               'Content-Type': 'application/json',
               'Authorization': 'Bearer '+token
@@ -62,15 +62,15 @@ function EditBooking(props){
               return Promise.reject('Something unexpected went wrong :)');
             })
             .then(data => {
-              // we either created the record...
+             
               if (data.bookingId) {
-                // redirect the user back to the /todos route
+                
                 setBookingId(data.bookingId)
                 setEditBookingView(true)
                 setShowSuccessMessage(false)
                 
               } else {
-                // we have error messages
+                
                 setErrors(data);
                 setShowFailedMessage(false)
               }
@@ -126,7 +126,7 @@ function EditBooking(props){
             </form>
             </div>
 
-            <div hidden={showSuccessMessage}><p>Booking SuccessFul!!! Please note the booking confirmation Id : {bookingId} </p>
+            <div hidden={showSuccessMessage}><p>Booking Successful!!! Please note the booking confirmation Id : {bookingId} </p>
             <Link to={`/`} ><button >Go Home</button>
                   </Link></div>
             <div hidden={showFailedMessage}><p>"Booking failed!!! Unable to Book!!!</p></div>
