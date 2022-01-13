@@ -18,6 +18,7 @@ public class CustomerService {
 
     public Customer findById(int customerId){return repository.findById(customerId);}
 
+    public Customer findByUser(String username){return repository.findByUsername(username);}
 
     public List<Customer> findAll() {
         return repository.findAll();

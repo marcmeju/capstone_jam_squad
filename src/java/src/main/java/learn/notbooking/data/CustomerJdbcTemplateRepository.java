@@ -40,6 +40,18 @@ public class CustomerJdbcTemplateRepository implements CustomerRepository{
                 .findFirst().orElse(null);
     }
 
+    public Customer findByUsername(String username){
+        final String sql = "select cust.*\n" +
+                "from not_booking.Customer cust\n" +
+                "inner join not_booking.user usr\n" +
+                "on cust.user_id = usr.user_id\n" +
+                "where user_name = ?;";
+
+        return jdbcTemplate.query(sql, new CustomerMapper(), username)
+                .stream()
+                .findFirst().orElse(null);
+    }
+
     @Override
     public Customer add(Customer customer) {
         final String sql = "insert into Customer (customer_first_name, customer_last_name, user_id, contact_id) values (?, ?, ?, ?);";

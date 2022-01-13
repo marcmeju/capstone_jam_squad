@@ -47,6 +47,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET,
                         "/customer/*").permitAll()
                 .antMatchers(HttpMethod.GET,
+                        "/customer/find/*").permitAll()
+                .antMatchers(HttpMethod.GET,
                         "/event").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/event/*").permitAll()
@@ -136,11 +138,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PasswordEncoder encoder;
 
-    @Bean
-    @Lazy
-    public HandlerMappingIntrospector mvcHandlerMappingIntrospector() {
-        return new HandlerMappingIntrospector();
-    }
+//    @Bean
+//    @Lazy
+//    public HandlerMappingIntrospector mvcHandlerMappingIntrospector() {
+//        return new HandlerMappingIntrospector();
+//    }
 // Takeout later
 //    @Override
 //    protected void configure(AuthenticationManagerBuilder auth) throws Exception{

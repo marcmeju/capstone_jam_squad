@@ -13,4 +13,6 @@ public interface CustomerRepository {
     boolean update(Customer customer);
 
     boolean deleteById(int customerId);
+
+    public Customer findByUsername(String username);
 }

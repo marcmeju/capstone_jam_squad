@@ -42,6 +42,20 @@ public class CustomerController {
         }
     }
 
+    @GetMapping("/find/{username}")
+    public ResponseEntity<Customer> findByUsername(@PathVariable String username){
+        Customer customer = service.findByUser(username);
+        try{
+            if (customer == null){
+                return new ResponseEntity<>(null,HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(customer,HttpStatus.OK);
+        }catch (Exception ex){
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+    }
+
     @PostMapping
     public ResponseEntity<Customer> add(@RequestBody Customer customer) {
         Result<Customer> result = service.add(customer);
