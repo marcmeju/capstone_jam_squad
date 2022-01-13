@@ -126,7 +126,7 @@ function EditBooking(props){
             </form>
             </div>
 
-            <div hidden={showSuccessMessage}><p>Booking SuccessFul!!! Please note the bookingId : {bookingId} </p>
+            <div hidden={showSuccessMessage}><p>Booking SuccessFul!!! Please note the booking confirmation Id : {bookingId} </p>
             <Link to={`/`} ><button >Go Home</button>
                   </Link></div>
             <div hidden={showFailedMessage}><p>"Booking failed!!! Unable to Book!!!</p></div>

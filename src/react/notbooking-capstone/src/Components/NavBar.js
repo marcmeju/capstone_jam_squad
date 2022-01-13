@@ -23,11 +23,12 @@ function NavBar(){
                 )} 
            
         {auth.user && (
-            <div>
-            <p>Hello {auth.user.firstName}!</p>
+            <>
+        
+            <li><Link to ="/booking/list">My Bookings</Link></li>
             <li><button onClick={() => auth.logout()} >Logout</button></li>
-               <li><Link to ="/booking/list">My Bookings</Link></li>
-            </div>
+            <p class="text-light bg-dark">Hello {auth.user.firstName}!</p>
+            </>
         )}
        </nav>
    ) 
