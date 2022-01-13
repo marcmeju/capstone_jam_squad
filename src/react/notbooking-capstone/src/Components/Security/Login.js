@@ -82,6 +82,11 @@ function Login() {
             <i className="bi bi-x"></i> Cancel
           </Link>
         </div>
+        <div>
+          <Link to = "/register">
+          <button className = "btn btn-warning">Register</button>
+          </Link>
+        </div>
       </form>
     </>
   );

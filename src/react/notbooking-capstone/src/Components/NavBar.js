@@ -19,14 +19,14 @@ function NavBar(){
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/register">Register</Link></li>
                 </>
-                )} */}
+                )} 
            
-        {/* {auth.user && (
+        {auth.user && (
             <div>
             <p>Hello {auth.user.username}!</p>
-            <button onClick={() => auth.logout()} className="btn btn-primary">Logout</button>
+            <button onClick={() => auth.logout()} >Logout</button>
             </div>
-        )} */}
+        )}
        </nav>
    ) 
 }

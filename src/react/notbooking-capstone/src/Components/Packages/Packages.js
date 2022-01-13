@@ -19,7 +19,8 @@ function Packages(){
       let Tier1 = input.filter(pkg => pkg.tierId == tierId && pkg.packageName.startsWith(location.substring(0,1).toUpperCase())) 
       return Tier1;
     }
-   function showEvent(id){
+
+    function showEvent(id){
        setPackageId(id);
        setDisplayEvent(false) ;        
    }
@@ -54,7 +55,7 @@ function Packages(){
       
             useEffect(() => {
             getData();
-            showVip();
+            //showVip();
         },[]);
 
         

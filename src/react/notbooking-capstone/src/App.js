@@ -8,7 +8,7 @@ import Register from "./Components/Security/Register"
 
 import jwt_decode from "jwt-decode";
 import { useState, useEffect } from "react"
-import {BrowserRouter as Router, Route,Switch} from "react-router-dom"
+import {BrowserRouter as Router, Route,Switch, Redirect} from "react-router-dom"
 import ViewEvents from "./Components/Events/ViewEvents"
 import AddEvents from "./Components/Events/AddEvents"
 import ViewPackage from "./Components/Packages/ViewPackage"
@@ -16,6 +16,8 @@ import AddPackage from "./Components/Packages/AddPackage"
 import SelectTier from "./Components/Selections/SelectTier"
 import Packages from "./Components/Packages/Packages"
 import AuthContext from "./Components/Security/AuthContext"
+import ViewBooking from "./Components/Booking/ViewCart"
+import DeleteBooking from "./Components/Booking/DeleteFromCart"
 
 const TOKEN_KEY = "user-api-token"
 
@@ -23,20 +25,32 @@ function App(){
     
     const [user, setUser] = useState(null);
     const [initialized,setInitialized] = useState(false);
+    const [customer,setCustomer] = useState({})
 
     useEffect(()=>{
       const token = localStorage.getItem(TOKEN_KEY);
 
       if(token){login(token)}
-
+      
       setInitialized(true);
     },[])
+
+    const findByUser = ()=>( user ? async() =>{
+      try{
+        const response = await fetch(`http:localhost:8080/customer/find/${user.username}`) 
+        const data = await response.json();
+        setCustomer({data});
+      }catch(error){console.log(error)}
+      console.log(customer)
+      return customer;
+    } : null);
+
 
     const login = (token) =>{
       const {id,sub:username,roles:userRoles} = jwt_decode(token);
 
       const roles = userRoles?.split(",");
-
+      
       const user = {
         id,
         username,
@@ -46,13 +60,14 @@ function App(){
           return this.roles.includes(role);
         },
       }
-
       console.log(user);
-
       setUser(user);
-
+      findByUser();
+      
       return user;
     };
+    
+
 
     const logout = ()=> {
       localStorage.removeItem(TOKEN_KEY)
@@ -64,7 +79,6 @@ function App(){
       login,
       logout,
     }
-
 
 
     return(
@@ -87,8 +101,8 @@ function App(){
 
                     <Route path={`/package/:location/:tierId`}> <Packages/> </Route>
                     <Route path ={`/events/:location/:tierId/:packageId`}><ViewEvents/></Route>
-
-                    <Route path = {`/booking/cart/:packageId`}> <ViewBooking/></Route>
+                    
+                    <Route path = {`/booking/cart/:packageId`}> {user? <ViewBooking/> : <Redirect to ="/login"/> } </Route>
                     <Route path = {`/booking/delete`}><DeleteBooking/></Route>
 
                     <Route path = "/login">   <Login />   </Route>

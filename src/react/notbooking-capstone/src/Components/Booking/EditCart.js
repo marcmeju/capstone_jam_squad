@@ -13,8 +13,6 @@ function EditBooking(props){
     const [showFailedMessage, setShowFailedMessage] = useState(true)
     const [bookingId, setBookingId] = useState(0)
 
-
-
     useEffect(() =>{
         const getData = async () => {
             try{
@@ -29,6 +27,8 @@ function EditBooking(props){
     }, [props.packageId]);
     console.log("This is package list", packages);
 
+  
+  
     function updatePrice(e){
      console.log(e.target.value);
      setnumOfGuests(e.target.value);
@@ -55,7 +55,7 @@ function EditBooking(props){
               return Promise.reject('Something unexpected went wrong :)');
             })
             .then(data => {
-              // we either created the recorded...
+              // we either created the record...
               if (data.bookingId) {
                 // redirect the user back to the /todos route
                 setBookingId(data.bookingId)
@@ -94,7 +94,7 @@ function EditBooking(props){
                       </tr>
                 </thead>
             <tbody>
-                
+            <tr><td> {}</td></tr>
             <tr><td>Package Name:</td><td>{packages.packageName  }</td></tr>
             <tr> <td>Package Tier :</td><td>{packages.tierId}</td> </tr>
             <tr><td>Booking Start Date :</td><td>{props.bookingStartDate}</td></tr>
@@ -119,7 +119,7 @@ function EditBooking(props){
             </form>
             </div>
 
-            <div hidden={showSuccessMessage}><p>Booking SuccessFul!!! Please note the bookingid - {bookingId} </p>
+            <div hidden={showSuccessMessage}><p>Booking SuccessFul!!! Please note the bookingId : {bookingId} </p>
             <Link to={`/`} ><button >Go Home</button>
                   </Link></div>
             <div hidden={showFailedMessage}><p>"Booking failed!!! Unable to Book!!!</p></div>
